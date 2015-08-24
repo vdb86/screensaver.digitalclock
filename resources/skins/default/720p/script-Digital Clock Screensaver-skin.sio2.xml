@@ -29,7 +29,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>size212</font>
+				<font>Clock</font>
 			</control>
 			<control type="button" id="30102">
 				<description>Colon</description>
@@ -42,7 +42,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>size212</font>
+				<font>Clock</font>
 				</control>
 			<control type="button" id="30103">
 				<description>Minute</description>
@@ -55,7 +55,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>size212</font>
+				<font>Clock</font>
 			</control>
 			<control type="button" id="30104">
 				<description>AMPM</description>
