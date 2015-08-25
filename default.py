@@ -72,17 +72,11 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.cm = int(Addon.getSetting('minutecolor'))
         self.campm = int(Addon.getSetting('ampmcolor'))
         self.cd = int(Addon.getSetting('datecolor'))
-        self.skinpath = xbmc.getSkinDir()
-        self.skin = 0
-		
-        #checking for problematic skins
-        if self.skinpath == 'skin.aeonmq5' or self.skinpath == 'skin.aeonmq6' or self.skinpath == 'skin.arctic.zephyr' or self.skinpath == 'skin.eminence' or self.skinpath == 'skin.titan':
-            self.skin = 1
-            self.hour_colorcontrol = self.getControl(30105)
-            self.colon_colorcontrol = self.getControl(30106)
-            self.minute_colorcontrol = self.getControl(30107)
-            self.ampm_colorcontrol = self.getControl(30108)
-            self.date_colorcontrol = self.getControl(30109)
+        self.hour_colorcontrol = self.getControl(30105)
+        self.colon_colorcontrol = self.getControl(30106)
+        self.minute_colorcontrol = self.getControl(30107)
+        self.ampm_colorcontrol = self.getControl(30108)
+        self.date_colorcontrol = self.getControl(30109)
 			
 		#setting up background and slideshow
         if self.slideshowenable == 'false':
@@ -205,26 +199,17 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.Display()
 
     def Display(self):
-        if self.skin == 0:
-            self.hour_control.setLabel(datetime.now().strftime(self.time),textColor=self.hourcolor)
-            self.colon_control.setLabel(" : ",textColor=self.coloncolor)   			
-            self.minute_control.setLabel(datetime.now().strftime("%M"),textColor=self.minutecolor)
-            self.ampm_control.setLabel(datetime.now().strftime("%p"),textColor=self.ampmcolor)
-            self.date_control.setLabel(self.date,textColor=self.datecolor)
-            #self.date_control.setLabel(self.test)
-        else:
-		#seting color for problematic skins
-            self.hour_control.setLabel(datetime.now().strftime(self.time))
-            self.colon_control.setLabel(" : ")   			
-            self.minute_control.setLabel(datetime.now().strftime("%M"))
-            self.ampm_control.setLabel(datetime.now().strftime("%p"))
-            self.date_control.setLabel(self.date)
-            #self.date_control.setLabel(self.datecolor)		
-            self.hour_colorcontrol.setLabel(self.hourcolor)
-            self.colon_colorcontrol.setLabel(self.coloncolor)   			
-            self.minute_colorcontrol.setLabel(self.minutecolor)
-            self.ampm_colorcontrol.setLabel(self.ampmcolor)
-            self.date_colorcontrol.setLabel(self.datecolor)		
+        self.hour_control.setLabel(datetime.now().strftime(self.time))
+        self.colon_control.setLabel(" : ")   			
+        self.minute_control.setLabel(datetime.now().strftime("%M"))
+        self.ampm_control.setLabel(datetime.now().strftime("%p"))
+        self.date_control.setLabel(self.date)
+        #self.date_control.setLabel(self.datecolor)		
+        self.hour_colorcontrol.setLabel(self.hourcolor)
+        self.colon_colorcontrol.setLabel(self.coloncolor)   			
+        self.minute_colorcontrol.setLabel(self.minutecolor)
+        self.ampm_colorcontrol.setLabel(self.ampmcolor)
+        self.date_colorcontrol.setLabel(self.datecolor)		
 		
     def exit(self):
         self.abort_requested = True

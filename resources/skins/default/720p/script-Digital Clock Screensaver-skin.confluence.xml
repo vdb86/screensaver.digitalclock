@@ -18,71 +18,126 @@
 			<width>360</width>
 			<height>130</height>
 			<visible>true</visible>
-			<control type="button" id="30101">
+			<control type="label" id="30101">
 				<description>Hour</description>
 				<posx>60</posx>
 				<posy>10</posy>
 				<width>120</width>
 				<height>65</height>
-				<textcolor>FFFFFFFF</textcolor>
+				<textcolor>$INFO[Control.GetLabel(30105)]</textcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
 				<font>WeatherTemp</font>
 			</control>
-			<control type="button" id="30102">
+			<control type="label" id="30102">
 				<description>Colon</description>
 				<posx>0</posx>
 				<posy>10</posy>
 				<width>360</width>
 				<height>65</height>
-				<textcolor>FFFFFFFF</textcolor>
+				<textcolor>$INFO[Control.GetLabel(30106)]</textcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
 				<font>WeatherTemp</font>
 				</control>
-			<control type="button" id="30103">
+			<control type="label" id="30103">
 				<description>Minute</description>
 				<posx>180</posx>
 				<posy>10</posy>
 				<width>120</width>
 				<height>65</height>
-				<textcolor>FFFFFFFF</textcolor>
+				<textcolor>$INFO[Control.GetLabel(30107)]</textcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
 				<font>WeatherTemp</font>
 			</control>
-			<control type="button" id="30104">
+			<control type="label" id="30104">
 				<description>AMPM</description>
 				<posx>280</posx>
 				<posy>45</posy>
 				<width>70</width>
 				<height>35</height>
-				<textcolor>FFFFFFFF</textcolor>
+				<textcolor>$INFO[Control.GetLabel(30108)]</textcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
 				<font>font13_title</font>
 			</control>			
-			<control type="button" id="30100">
+			<control type="label" id="30100">
 				<description>Date</description>
 				<posx>0</posx>
 				<posy>85</posy>
 				<width>360</width>
 				<height>35</height>
-				<textcolor>FFFFFFFF</textcolor>
+				<textcolor>$INFO[Control.GetLabel(30109)]</textcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label></label>
 				<font>font13_title</font>
 			</control>			
+			<control type="label" id="30105">
+				<description>Hour color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+			</control>
+			<control type="label" id="30106">
+				<description>Colon color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+				</control>
+			<control type="label" id="30107">
+				<description>Minute color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+			</control>
+			<control type="label" id="30108">
+				<description>AMPM color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+			</control>			
+			<control type="label" id="30109">
+				<description>Date color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+			</control>		
 		</control>
 	</controls>
 </window>
