@@ -29,7 +29,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>special17</font>
+				<font>font-80</font>
 			</control>
 			<control type="label" id="30102">
 				<description>Colon</description>
@@ -42,7 +42,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>special17</font>
+				<font>font-80</font>
 				</control>
 			<control type="label" id="30103">
 				<description>Minute</description>
@@ -55,7 +55,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>special17</font>
+				<font>font-80</font>
 			</control>
 			<control type="label" id="30104">
 				<description>AMPM</description>
@@ -68,7 +68,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>font64</font>
+				<font>font-20</font>
 			</control>			
 			<control type="label" id="30100">
 				<description>Date</description>
@@ -81,7 +81,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label></label>
-				<font>font64</font>
+				<font>font-20</font>
 			</control>			
 			<control type="label" id="30105">
 				<description>Hour color control</description>
