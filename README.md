@@ -6,7 +6,7 @@ Digital clock screensaver with date and several options.
 These are the options:
 
 General
-- Number of minutes to stay in place (Number of minutes that the clock will stay in place before moving to a random location)
+- Number of seconds to stay in place (Number of minutes that the clock will stay in place before moving to a random location)
 - Time format
 - Date format
 
