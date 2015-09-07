@@ -19,11 +19,11 @@ msgstr ""
 #settings labels
 
 msgctxt "#32001"
-msgid "Opöte"
+msgid "Op≈°te"
 msgstr ""
 
 msgctxt "#32005"
-msgid "Broj minuta stajanja u mestu"
+msgid "Broj sekundi stajanja u mestu"
 msgstr ""
 
 msgctxt "#32006"
@@ -107,7 +107,7 @@ msgid "Plava"
 msgstr ""
 
 msgctxt "#32074"
-msgid "éuta"
+msgid "≈Ωuta"
 msgstr ""
 
 msgctxt "#32075"
