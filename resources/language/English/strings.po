@@ -23,7 +23,7 @@ msgid "General"
 msgstr ""
 
 msgctxt "#32005"
-msgid "Number of minutes to stay in place"
+msgid "Number of seconds to stay in place"
 msgstr ""
 
 msgctxt "#32006"
