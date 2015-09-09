@@ -9,6 +9,8 @@ General
 - Number of seconds to stay in place (Number of minutes that the clock will stay in place before moving to a random location)
 - Time format
 - Date format
+- Enable now playing info (Shows movie title, tv show title and episode title, artist and song, works with radio too)
+- Number of seconds for information switch (Switch between tv show title and episode title, artist and song, etc.)
 
 Colors (Users can choose either to have a random color every time the clock moves or one from the list)
 - Random color
