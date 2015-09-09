@@ -16,7 +16,7 @@
 			<posx>460</posx>
 			<posy>290</posy>
 			<width>360</width>
-			<height>130</height>
+			<height>170</height>
 			<visible>true</visible>
 			<control type="label" id="30101">
 				<description>Hour</description>
@@ -82,7 +82,20 @@
 				<aligny>center</aligny>
 				<label></label>
 				<font>WeatherCurrentConditionFont</font>
-			</control>			
+			</control>	
+			<control type="label" id="30110">
+				<description>Now playing info</description>
+				<posx>0</posx>
+				<posy>125</posy>
+				<width>360</width>
+				<height>35</height>
+				<textcolor>$INFO[Control.GetLabel(30111)]</textcolor>
+				<colordiffuse>00000000</colordiffuse>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label></label>
+				<font>WeatherCurrentConditionFont</font>
+			</control>				
 			<control type="label" id="30105">
 				<description>Hour color control</description>
 				<posx>0</posx>
@@ -138,6 +151,17 @@
 				<font>font14</font>
 				<visible>false</visible>
 			</control>		
+			<control type="label" id="30111">
+				<description>Now playing info color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+			</control>				
 		</control>
 	</controls>
 </window>

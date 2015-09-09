@@ -51,13 +51,18 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.colon_control = self.getControl(30102)
         self.minute_control = self.getControl(30103)
         self.ampm_control = self.getControl(30104)
+        self.nowplaying_control = self.getControl(30110)		
         self.container = self.getControl(30002)
         self.image_control = self.getControl(30020)
         self.waitcounter = 0
+        self.switchcounter = 0
+        self.switch = 1
         self.stayinplace = int(Addon.getSetting('stayinplace'))
         self.datef=Addon.getSetting('dateformat')
-        self.timef=Addon.getSetting('timeformat')		
+        self.timef=Addon.getSetting('timeformat')	
         self.ampm_control.setVisible(False)
+        self.nowplayingshow = Addon.getSetting('nowplayingshow')		
+        self.infoswitch = int(Addon.getSetting('infoswitch'))				
         self.slideshowenable = Addon.getSetting('slideshow')
         self.randomimages = Addon.getSetting('randomimages')
         self.randomcolor = Addon.getSetting('randomcolor')
@@ -67,16 +72,19 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.trm = int(Addon.getSetting('minutetr'))
         self.trampm = int(Addon.getSetting('ampmtr'))
         self.trd = int(Addon.getSetting('datetr'))
+        self.trnp = int(Addon.getSetting('nowplayingtr'))		
         self.ch = int(Addon.getSetting('hourcolor'))
         self.cc = int(Addon.getSetting('coloncolor'))
         self.cm = int(Addon.getSetting('minutecolor'))
         self.campm = int(Addon.getSetting('ampmcolor'))
         self.cd = int(Addon.getSetting('datecolor'))
+        self.cnp = int(Addon.getSetting('nowplayingcolor'))		
         self.hour_colorcontrol = self.getControl(30105)
         self.colon_colorcontrol = self.getControl(30106)
         self.minute_colorcontrol = self.getControl(30107)
         self.ampm_colorcontrol = self.getControl(30108)
         self.date_colorcontrol = self.getControl(30109)
+        self.nowplaying_colorcontrol = self.getControl(30111)
 			
 		#setting up background and slideshow
         if self.slideshowenable == 'false':
@@ -102,11 +110,46 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 		#setting up colors
         self.color = ['FFFFFF','FF0000','00FF00','0000FF','FFFF00','000000']
         
+        #setting up now playing info
+        if xbmc.getInfoLabel('MusicPlayer.Artist') and xbmc.getInfoLabel('MusicPlayer.Title'):
+            self.nowplayingtype = 1
+            self.nowplaying = '$INFO[MusicPlayer.Artist]'
+        elif xbmc.getInfoLabel('VideoPlayer.TVShowTitle') and xbmc.getInfoLabel('VideoPlayer.Title'):
+            self.nowplayingtype = 2
+            self.nowplaying = '$INFO[MusicPlayer.TVShowTitle]'
+        elif xbmc.getInfoLabel('VideoPlayer.Title'):
+            self.nowplayingtype = 3
+            self.nowplaying = '$INFO[VideoPlayer.Title]'
+        elif xbmc.getInfoLabel('MusicPlayer.Title'):
+            self.nowplayingtype = 4
+            self.split = xbmc.getInfoLabel('MusicPlayer.Title').split(' - ')
+            self.nowplaying = self.split[0]			
+        else:
+            self.nowplayingtype = 0
+            self.nowplaying = '$INFO[MusicPlayer.Artist]'
+            self.nowplaying_control.setVisible(False)	
+
 		#setting up the date format
         self.dateformat = ['$INFO[System.Date(DDD dd. MMM yyyy)]','$INFO[System.Date(DDD dd. MMM yyyy)]','$INFO[System.Date(dd.mm.yyyy)]','$INFO[System.Date(mm.dd.yyyy)]']		
         if self.datef == '0':
             self.date_control.setVisible(False)
-            self.container.setHeight(90)
+            if self.nowplayingshow == 'true':
+                self.nowplaying_control.setPosition(0, 85)
+                if self.nowplayingtype != 0:
+                    self.container.setHeight(130)
+                else:					
+                    self.container.setHeight(90)
+            else:
+                self.container.setHeight(90)
+                self.nowplaying_control.setVisible(False)
+        else:
+            if self.nowplayingshow == 'true':
+                if self.nowplayingtype == 0:
+                    self.container.setHeight(130)
+            else:					
+                self.container.setHeight(130)	
+                self.nowplaying_control.setVisible(False)
+				
         self.date = self.dateformat[int(self.datef)]
 
 		#setting up the time format
@@ -120,27 +163,32 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.screenx = 1280 - self.container.getWidth()
 				
 		#combining transparency and color
-        self.setCTR()	
+        self.setCTR()
+        self.Display()
         
         self.DisplayTime()
         
     def DisplayTime(self):
         while not self.abort_requested:
-            #Display time
-            self.Display()
-            	
+
+            #Switching Artist and Title	
+            self.Switch()
+		
             #Random movement
+            self.waitcounter += 1			
             if self.waitcounter == (2*self.stayinplace):
                 new_x = random.randint(0,self.screenx)
                 new_y = random.randint(0,self.screeny)
                 self.container.setPosition(new_x,new_y)
                 self.waitcounter = 0
                 self.setCTR()
-            else:
-                self.waitcounter += 1
 
+		    #Display time
+            self.Display()			
+				
 			#Slideshow
             if self.slideshowenable == 'true':
+                self.slideshowcounter +=1
                 if self.slideshowcounter == (2*self.imagetimer):
                     if self.randomimages =='true':
                         self.nextfile = random.randint(0,self.number)
@@ -150,15 +198,13 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.slideshowcounter = 0
                     if self.nextfile > self.number:
                         self.nextfile = 0
-                else:
-                    self.slideshowcounter +=1
 				
 			#Colon blink
             if datetime.now().second%2==0:
                 self.colon_control.setVisible(True)
             else:
                 self.colon_control.setVisible(False)
-				
+
             xbmc.sleep(500)
 			
         if self.abort_requested:
@@ -173,6 +219,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.minutecolor = self.transparency[self.trm] + self.color[self.cm]
             self.ampmcolor = self.transparency[self.trampm] + self.color[self.campm]
             self.datecolor = self.transparency[self.trd] + self.color[self.cd]
+            self.nowplayingcolor = self.transparency[self.trnp] + self.color[self.cnp]
         elif self.randomcolor == 'true' and self.randomtr == 'false':
             self.rc = str("%06x" % random.randint(0, 0xFFFFFF))
             self.hourcolor = self.transparency[self.trh] + self.rc
@@ -180,6 +227,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.minutecolor = self.transparency[self.trm] + self.rc
             self.ampmcolor = self.transparency[self.trampm] + self.rc
             self.datecolor = self.transparency[self.trd] + self.rc
+            self.nowplayingcolor = self.transparency[self.trnp] + self.rc			
         elif self.randomcolor == 'false' and self.randomtr == 'true':
             self.rtr = str("%02x" % random.randint(0x4C, 0xFF))
             self.hourcolor = self.rtr + self.color[self.ch]
@@ -187,6 +235,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.minutecolor = self.rtr + self.color[self.cm]
             self.ampmcolor = self.rtr + self.color[self.campm]
             self.datecolor = self.rtr + self.color[self.cd]
+            self.nowplayingcolor = self.rtr + self.color[self.cnp]			
         elif self.randomcolor == 'true' and self.randomtr == 'true':
             self.rc = str("%06x" % random.randint(0, 0xFFFFFF))
             self.rtr = str("%02x" % random.randint(0x4C, 0xFF))
@@ -195,8 +244,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.minutecolor = self.rtr + self.rc
             self.ampmcolor = self.rtr + self.rc
             self.datecolor = self.rtr + self.rc
-			
-        self.Display()
+            self.nowplayingcolor = self.rtr + self.rc
 
     def Display(self):
         self.hour_control.setLabel(datetime.now().strftime(self.time))
@@ -204,12 +252,44 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.minute_control.setLabel(datetime.now().strftime("%M"))
         self.ampm_control.setLabel(datetime.now().strftime("%p"))
         self.date_control.setLabel(self.date)
-        #self.date_control.setLabel(self.datecolor)		
+        self.nowplaying_control.setLabel(self.nowplaying)
         self.hour_colorcontrol.setLabel(self.hourcolor)
         self.colon_colorcontrol.setLabel(self.coloncolor)   			
         self.minute_colorcontrol.setLabel(self.minutecolor)
         self.ampm_colorcontrol.setLabel(self.ampmcolor)
-        self.date_colorcontrol.setLabel(self.datecolor)		
+        self.date_colorcontrol.setLabel(self.datecolor)
+        self.nowplaying_colorcontrol.setLabel(self.nowplayingcolor)	
+
+    def Switch(self):
+        if self.nowplayingtype == 1:
+            self.split = xbmc.getInfoLabel('MusicPlayer.Title').split(' (')		
+            self.switchcounter += 1
+            if self.switchcounter == (2*self.infoswitch):
+                self.switch *=-1
+                self.switchcounter = 0
+            if self.switch == 1:
+                self.nowplaying = '$INFO[MusicPlayer.Artist]'
+            else:
+                self.nowplaying = self.split[0]
+        elif self.nowplayingtype == 2:
+            self.switchcounter += 1		
+            if self.switchcounter == (2*self.infoswitch):
+                self.switch *=-1
+                self.switchcounter = 0
+            if self.switch == 1:
+                self.nowplaying = '$INFO[VideoPlayer.TVShowTitle]'
+            else:
+                self.nowplaying = '$INFO[VideoPlayer.Title]'
+        elif self.nowplayingtype == 4:
+            self.split = xbmc.getInfoLabel('MusicPlayer.Title').split(' - ')			
+            self.switchcounter += 1		
+            if self.switchcounter == (2*self.infoswitch):
+                self.switch *=-1
+                self.switchcounter = 0
+            if self.switch == 1:
+                self.nowplaying = self.split[0]
+            else:
+                self.nowplaying = self.split[1]				
 		
     def exit(self):
         self.abort_requested = True

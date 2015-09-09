@@ -42,6 +42,14 @@ msgctxt "#32009"
 msgid "05:14 PM"
 msgstr ""
 
+msgctxt "#32020"
+msgid "Omogući podatke o trenutnoj reprodukciji"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Broj sekundi za zamenu podataka"
+msgstr ""
+
 msgctxt "#32030"
 msgid "Oblik prikaza datuma"
 msgstr ""
@@ -67,27 +75,31 @@ msgid "Boja"
 msgstr ""
 
 msgctxt "#32051"
-msgid "Boja sata"
+msgid "Nasumicna boja"
 msgstr ""
 
 msgctxt "#32052"
-msgid "Boja dvotacke"
+msgid "Boja sata"
 msgstr ""
 
 msgctxt "#32053"
-msgid "Boja minuta"
+msgid "Boja dvotacke"
 msgstr ""
 
 msgctxt "#32054"
-msgid "Boja AM/PM"
+msgid "Boja minuta"
 msgstr ""
 
 msgctxt "#32055"
-msgid "Boja datuma"
+msgid "Boja AM/PM"
 msgstr ""
 
 msgctxt "#32056"
-msgid "Nasumicna boja"
+msgid "Boja datuma"
+msgstr ""
+
+msgctxt "#32057"
+msgid "Boja podataka trenutne reprodukcije"
 msgstr ""
 
 msgctxt "#32070"
@@ -119,27 +131,31 @@ msgid "Providnost"
 msgstr ""
 
 msgctxt "#32101"
-msgid "Providnost sata"
+msgid "Nasumicna providnost"
 msgstr ""
 
 msgctxt "#32102"
-msgid "Providnost dvotacke"
+msgid "Providnost sata"
 msgstr ""
 
 msgctxt "#32103"
-msgid "Providnost minuta"
+msgid "Providnost dvotacke"
 msgstr ""
 
 msgctxt "#32104"
-msgid "Providnost AM/PM"
+msgid "Providnost minuta"
 msgstr ""
 
 msgctxt "#32105"
-msgid "Providnost datuma"
+msgid "Providnost AM/PM"
 msgstr ""
 
 msgctxt "#32106"
-msgid "Nasumicna providnost"
+msgid "Providnost datuma"
+msgstr ""
+
+msgctxt "#32107"
+msgid "Providnost podataka trenutne reprodukcije"
 msgstr ""
 
 msgctxt "#32120"

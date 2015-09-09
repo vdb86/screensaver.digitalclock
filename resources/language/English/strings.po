@@ -42,6 +42,14 @@ msgctxt "#32009"
 msgid "05:14 PM"
 msgstr ""
 
+msgctxt "#32020"
+msgid "Enable now playing info"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Number of seconds for information switch"
+msgstr ""
+
 msgctxt "#32030"
 msgid "Date format"
 msgstr ""
@@ -67,27 +75,31 @@ msgid "Colors"
 msgstr ""
 
 msgctxt "#32051"
-msgid "Hour color"
+msgid "Random color"
 msgstr ""
 
 msgctxt "#32052"
-msgid "Colon color"
+msgid "Hour color"
 msgstr ""
 
 msgctxt "#32053"
-msgid "Minute color"
+msgid "Colon color"
 msgstr ""
 
 msgctxt "#32054"
-msgid "AM/PM color"
+msgid "Minute color"
 msgstr ""
 
 msgctxt "#32055"
-msgid "Date color"
+msgid "AM/PM color"
 msgstr ""
 
 msgctxt "#32056"
-msgid "Random color"
+msgid "Date color"
+msgstr ""
+
+msgctxt "#32057"
+msgid "Now playing info color"
 msgstr ""
 
 msgctxt "#32070"
@@ -119,27 +131,31 @@ msgid "Transparency"
 msgstr ""
 
 msgctxt "#32101"
-msgid "Hour transparency"
+msgid "Random transparency"
 msgstr ""
 
 msgctxt "#32102"
-msgid "Colon transparency"
+msgid "Hour transparency"
 msgstr ""
 
 msgctxt "#32103"
-msgid "Minute transparency"
+msgid "Colon transparency"
 msgstr ""
 
 msgctxt "#32104"
-msgid "AM/PM transparency"
+msgid "Minute transparency"
 msgstr ""
 
 msgctxt "#32105"
-msgid "Date transparency"
+msgid "AM/PM transparency"
 msgstr ""
 
 msgctxt "#32106"
-msgid "Random transparency"
+msgid "Date transparency"
+msgstr ""
+
+msgctxt "#32107"
+msgid "Now playing info transparency"
 msgstr ""
 
 msgctxt "#32120"
