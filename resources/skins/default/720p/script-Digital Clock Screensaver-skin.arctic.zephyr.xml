@@ -84,7 +84,7 @@
 				<font>SmallBold</font>
 			</control>	
 			<control type="label" id="30110">
-				<description>Now playing info</description>
+				<description>Information</description>
 				<posx>0</posx>
 				<posy>125</posy>
 				<width>360</width>
@@ -152,7 +152,7 @@
 				<visible>false</visible>
 			</control>		
 			<control type="label" id="30111">
-				<description>Now playing info color control</description>
+				<description>Information color control</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>0</width>

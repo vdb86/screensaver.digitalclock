@@ -43,11 +43,19 @@ msgid "05:14 PM"
 msgstr ""
 
 msgctxt "#32020"
-msgid "Enable now playing info"
+msgid "Enable additional information"
 msgstr ""
 
 msgctxt "#32021"
 msgid "Number of seconds for information switch"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Enable now playing information"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Enable weather information"
 msgstr ""
 
 msgctxt "#32030"
@@ -99,7 +107,7 @@ msgid "Date color"
 msgstr ""
 
 msgctxt "#32057"
-msgid "Now playing info color"
+msgid "Additional information color"
 msgstr ""
 
 msgctxt "#32070"
@@ -155,7 +163,7 @@ msgid "Date transparency"
 msgstr ""
 
 msgctxt "#32107"
-msgid "Now playing info transparency"
+msgid "Additional information transparency"
 msgstr ""
 
 msgctxt "#32120"

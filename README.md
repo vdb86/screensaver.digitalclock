@@ -1,14 +1,18 @@
 Digital clock screensaver
 =================
 
-Digital clock screensaver with date and several options.
+Digital clock screensaver with date, now playing information, weather information, image slideshow and several options.
 
 These are the options:
 
 General
-- Number of seconds to stay in place (Number of minutes that the clock will stay in place before moving to a random location)
+- Number of seconds to stay in place (Number of seconds that the clock will stay in place before moving to a random location)
 - Time format
 - Date format
+- Enable additional information
+- Number of seconds for information switch (Number of seconds before the information will be switched with another one, i.e. Artist - Song - Weather information)
+- Enable now playing information
+- Enable weather information
 
 Colors (Users can choose either to have a random color every time the clock moves or one from the list)
 - Random color
