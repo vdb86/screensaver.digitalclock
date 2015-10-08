@@ -78,6 +78,30 @@ msgctxt "#32034"
 msgid "05.30.2015"
 msgstr ""
 
+msgctxt "#32040"
+msgid "Weather icons"
+msgstr ""
+
+msgctxt "#32041"
+msgid "Hide weather icon"
+msgstr ""
+
+msgctxt "#32042"
+msgid "Icon set 1"
+msgstr ""
+
+msgctxt "#32043"
+msgid "Icon set 2"
+msgstr ""
+
+msgctxt "#32044"
+msgid "Icon set 3"
+msgstr ""
+
+msgctxt "#32045"
+msgid "Icon set 4"
+msgstr ""
+
 msgctxt "#32050"
 msgid "Colors"
 msgstr ""
@@ -108,6 +132,10 @@ msgstr ""
 
 msgctxt "#32057"
 msgid "Additional information color"
+msgstr ""
+
+msgctxt "#32058"
+msgid "Weather icon color"
 msgstr ""
 
 msgctxt "#32070"
@@ -164,6 +192,10 @@ msgstr ""
 
 msgctxt "#32107"
 msgid "Additional information transparency"
+msgstr ""
+
+msgctxt "#32108"
+msgid "Weather icon transparency"
 msgstr ""
 
 msgctxt "#32120"
