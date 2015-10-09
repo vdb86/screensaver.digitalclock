@@ -64,7 +64,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.weather = 0
         self.stayinplace = int(Addon.getSetting('stayinplace'))
         self.datef=Addon.getSetting('dateformat')
-        self.timef=Addon.getSetting('timeformat')	
+        self.timef=Addon.getSetting('timeformat')
+        self.shadowf=Addon.getSetting('shadowformat')		
         self.ampm_control.setVisible(False)
         self.informationshow = Addon.getSetting('additionalinformation')	
         self.nowplayinginfoshow = Addon.getSetting('nowplayinginfoshow')		
@@ -95,6 +96,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.ampm_colorcontrol = self.getControl(30108)
         self.date_colorcontrol = self.getControl(30109)
         self.information_colorcontrol = self.getControl(30111)
+        self.shadow_colorcontrol = self.getControl(30112)	
 			
 		#setting up background and slideshow
         if self.slideshowenable == 'false':
@@ -119,6 +121,10 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 		
 		#setting up colors
         self.color = ['FFFFFF','FF0000','00FF00','0000FF','FFFF00','000000']
+		
+		#setting up shadow colors
+        self.shadowcolor = ['00000000','FFFFFFFF','FF808080','FF000000']
+        self.shadow_colorcontrol.setLabel(self.shadowcolor[int(self.shadowf)])
      
         #setting up information
         if self.informationshow == 'true':		
@@ -217,7 +223,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
     def DisplayTime(self):
         while not self.abort_requested:
 
-		    #checking if allweather information is available
+		    #checking if all weather information is available
             if self.conditions == 'Busy':
                 self.temperature = xbmc.getInfoLabel('Weather.Temperature')
                 self.conditions = xbmc.getInfoLabel('Weather.Conditions')

@@ -266,6 +266,10 @@ msgctxt "#32155"
 msgid "Random images"
 msgstr ""
 
+msgctxt "#32156"
+msgid "Text shadow color"
+msgstr ""
+
 msgctxt "#32170"
 msgid "15 sec"
 msgstr ""
@@ -312,4 +316,20 @@ msgstr ""
 
 msgctxt "#32181"
 msgid "10 min"
+msgstr ""
+
+msgctxt "#32190"
+msgid "None"
+msgstr ""
+
+msgctxt "#32191"
+msgid "White"
+msgstr ""
+
+msgctxt "#32192"
+msgid "Gray"
+msgstr ""
+
+msgctxt "#32193"
+msgid "Black"
 msgstr ""

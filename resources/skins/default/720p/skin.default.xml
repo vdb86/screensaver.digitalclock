@@ -41,6 +41,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<width>120</width>
 				<height>65</height>
 				<textcolor>$INFO[Control.GetLabel(30105)]</textcolor>
+				<shadowcolor>$INFO[Control.GetLabel(30112)]</shadowcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
@@ -54,6 +55,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<width>360</width>
 				<height>65</height>
 				<textcolor>$INFO[Control.GetLabel(30106)]</textcolor>
+				<shadowcolor>$INFO[Control.GetLabel(30112)]</shadowcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
@@ -67,6 +69,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<width>120</width>
 				<height>65</height>
 				<textcolor>$INFO[Control.GetLabel(30107)]</textcolor>
+				<shadowcolor>$INFO[Control.GetLabel(30112)]</shadowcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
@@ -80,6 +83,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<width>70</width>
 				<height>35</height>
 				<textcolor>$INFO[Control.GetLabel(30108)]</textcolor>
+				<shadowcolor>$INFO[Control.GetLabel(30112)]</shadowcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>				
@@ -93,6 +97,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<width>360</width>
 				<height>35</height>
 				<textcolor>$INFO[Control.GetLabel(30109)]</textcolor>
+				<shadowcolor>$INFO[Control.GetLabel(30112)]</shadowcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -106,6 +111,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<width>360</width>
 				<height>35</height>
 				<textcolor>$INFO[Control.GetLabel(30111)]</textcolor>
+				<shadowcolor>$INFO[Control.GetLabel(30112)]</shadowcolor>
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -169,6 +175,17 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 			</control>	
 			<control type="label" id="30111">
 				<description>Information color control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>0</width>
+				<height>0</height>
+				<align>center</align>
+				<label></label>
+				<font>font14</font>
+				<visible>false</visible>
+			</control>			
+			<control type="label" id="30112">
+				<description>Shadow color control</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>0</width>

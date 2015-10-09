@@ -36,6 +36,7 @@ Transparency (Users can choose either to have a random transparency every time t
 - Weather icon transparency
 
 Background
+- Text shadow color
 - Enable slideshow (Users can have a slideshow of their images for background)
 - Choose slideshow directory
 - Change background picture every

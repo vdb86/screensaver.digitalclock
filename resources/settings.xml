@@ -31,6 +31,7 @@
 		<setting id="weathericontr" type="select" label="32108" visible="eq(-7,false)" default="0" lvalues="32120|32121|32122|32123|32124|32125|32126|32127|32128|32129|32130"/>
 		</category>
     <category label="32150">
+		<setting id="shadowformat" type="select" label="32156" default="0" lvalues="32190|32191|32192|32193"/>	
 		<setting label="32152" type="bool" id="slideshow" default="false"/>
 		<setting label="32153" type="folder" id="folder" subsetting="true" visible="eq(-1,true)" default="images" source="auto"/>
 		<setting id="imagetimer" type="select" label="32154" subsetting="true" visible="eq(-2,true)" default="0" lvalues="32170|32171|32172|32173|32174|32175|32176|32177|32178|32179|32180|32181"/>
