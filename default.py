@@ -212,7 +212,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 		
 		#setting up the screen size
         self.screeny = 720 - self.container.getHeight()
-        self.screenx = 1280 - self.container.getWidth()
+        self.screenx = 1280 - self.container.getWidth()	
 		
 		#combining transparency and color
         self.setCTR()
@@ -322,7 +322,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.colon_control.setLabel(" : ")   			
         self.minute_control.setLabel(datetime.now().strftime("%M"))
         self.ampm_control.setLabel(datetime.now().strftime("%p"))
-        self.date_control.setLabel(self.date)		
+        self.date_control.setLabel(self.date)	
         if self.informationtype != 0:
             self.information_control.setLabel(self.information)
         if self.weathericonf != '0': 			
@@ -402,8 +402,16 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         xbmc.log(u'Digital Clock Screensaver: %s' % msg)
 
 if __name__ == '__main__':
-    if(os.path.isfile(__path__ + "\\resources\\skins\\default\\720p\\skin.custom.xml")):
-        screensaver = Screensaver("skin.custom.xml", __path__, 'default')
+    if(os.path.isfile(xbmc.translatePath('special://skin/1080i/script-screensaver-digitalclock-custom.xml'))):
+        screensaver = Screensaver("script-screensaver-digitalclock-custom.xml", xbmc.translatePath('special://skin/1080i/'), 'default')
+    elif(os.path.isfile(xbmc.translatePath('special://skin/720p/script-screensaver-digitalclock-custom.xml'))):
+        screensaver = Screensaver("script-screensaver-digitalclock-custom.xml", xbmc.translatePath('special://skin/720p/'), 'default')
+    elif(os.path.isfile(xbmc.translatePath('special://skin/21x9/script-screensaver-digitalclock-custom.xml'))):
+        screensaver = Screensaver("script-screensaver-digitalclock-custom.xml", xbmc.translatePath('special://skin/21x9/'), 'default')
+    elif(os.path.isfile(xbmc.translatePath('special://skin/16x9/script-screensaver-digitalclock-custom.xml'))):
+        screensaver = Screensaver("script-screensaver-digitalclock-custom.xml", xbmc.translatePath('special://skin/16x9/'), 'default')
+    elif(os.path.isfile(xbmc.translatePath('special://skin/4x3Hirez/script-screensaver-digitalclock-custom.xml'))):
+        screensaver = Screensaver("script-screensaver-digitalclock-custom.xml", xbmc.translatePath('special://skin/4x3Hirez/'), 'default')
     elif(os.path.isfile(__path__ + "\\resources\\skins\\default\\720p\\" + __scriptname__)):
         screensaver = Screensaver(__scriptname__, __path__, 'default')
     else:

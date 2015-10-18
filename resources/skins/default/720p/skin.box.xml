@@ -41,7 +41,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>ScrollText3</font>
+				<font>ScreensaverClock</font>
 			</control>
 			<control type="label" id="30102">
 				<description>Colon</description>
@@ -55,7 +55,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>ScrollText3</font>
+				<font>ScreensaverClock</font>
 				</control>
 			<control type="label" id="30103">
 				<description>Minute</description>
@@ -69,7 +69,7 @@
 				<align>center</align>
 				<aligny>center</aligny>				
 				<label></label>
-				<font>ScrollText3</font>
+				<font>ScreensaverClock</font>
 			</control>
 			<control type="label" id="30104">
 				<description>AMPM</description>

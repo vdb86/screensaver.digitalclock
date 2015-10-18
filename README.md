@@ -45,9 +45,10 @@ Background
 
 This screensaver is configured for every skin separately since it has to use Fonts defined by the skin!
 
-Skin developers have an option to use skin.custom which will override xml file used for a certain skin, this way if you're developing a skin you don't have to mess around too much with screensaver's xml files.
-Take a look at the skin.custom - example.
-Your skin.custom file won't be affected by any screensaver.digitalclock updates.
+Skin developers have an option to use script-screensaver-digitalclock-custom.xml in their skins 1080i,720p... folder, they provide it with their skin!
+Screensaver will check for skin folders in this order: 1080i,720p, 21x9 16x9, 4x3Hirez.
+If no script-screensaver-digitalclock-custom.xml is found it will look for an appropriate xml file within screensavers folder.
+If there is no appropriate xml file it will use skin.default.xml
 
 If the skin is not on the list the screensaver will use default font names from confluence (It might not look pretty but it will work with any skin):
 

@@ -1,3 +1,6 @@
+[B]2.8.0[/B]
+- Changed the way screensaver deals with custom xml files
+
 [B]2.7.0[/B]
 - Added support for text shadow color
 
