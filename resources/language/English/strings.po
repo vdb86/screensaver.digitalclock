@@ -22,6 +22,19 @@ msgctxt "#32001"
 msgid "General"
 msgstr ""
 
+msgctxt "#32002"
+msgid "Movement on the screen"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Random position"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Bounce"
+msgstr ""
+
+
 msgctxt "#32005"
 msgid "Number of seconds to stay in place"
 msgstr ""

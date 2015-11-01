@@ -6,6 +6,7 @@ Digital clock screensaver with date, now playing information, weather informatio
 These are the options:
 
 General
+- Movement on the scrren
 - Number of seconds to stay in place (Number of seconds that the clock will stay in place before moving to a random location)
 - Time format
 - Date format
