@@ -62,7 +62,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.switchlimit = 2		
         self.informationtype = 0
         self.weather = 0
-        self.movementtype = int(Addon.getSetting('movementtype'))		
+        self.movementtype = int(Addon.getSetting('movementtype'))
+        self.movementspeed = int(Addon.getSetting('movementspeed'))
         self.stayinplace = int(Addon.getSetting('stayinplace'))
         self.datef=Addon.getSetting('dateformat')
         self.timef=Addon.getSetting('timeformat')
@@ -218,8 +219,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         else:
             self.waittimer = 0.02
             self.multiplier = 50
-            self.dx = random.choice([-2,2])
-            self.dy = random.choice([-2,2])			
+            self.dx = random.choice([-(self.movementspeed+1),(self.movementspeed+1)])
+            self.dy = random.choice([-(self.movementspeed+1),(self.movementspeed+1)])
 		
 		#setting up the screen size
         self.screeny = 720 - self.container.getHeight()
