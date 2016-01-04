@@ -76,6 +76,7 @@ If the skin is not on the list screensaver will use default font names from conf
 - Mimic
 - Nebula
 - Neon
+- OSMC
 - Rapier
 - Refocus (Works but it still doesn't have the proper font - contacted the developer)
 - Retouched
