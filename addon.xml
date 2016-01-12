@@ -4,7 +4,7 @@
         version="3.1.0"
         provider-name="Vojislav Vlasic">
         <requires>
-        	<import addon="xbmc.python" version="2.1.0"/>
+        	<import addon="xbmc.python" version="2.20.0"/>
   	</requires>
   	<extension point="xbmc.ui.screensaver" library="default.py" />
   	<extension point="xbmc.addon.metadata">
