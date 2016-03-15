@@ -112,6 +112,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.number = len(os.walk(self.folder).next()[2])-1
             self.slideshowcounter = 0
             self.files = os.walk(self.folder).next()[2]
+            self.files.sort()
             self.nextfile = 0
             if self.randomimages =='true':
                 self.nextfile = random.randint(0,self.number)
