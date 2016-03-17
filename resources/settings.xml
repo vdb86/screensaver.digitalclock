@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="32000">
-        <setting label="32010" type="enum" id="movementtype" default="1" lvalues="32011|32012"/>
+        <setting label="32010" type="enum" id="movementtype" default="1" lvalues="32011|32012|32013"/>
 		<setting label="32020" type="enum" id="movementspeed" subsetting="true" visible="eq(-1,1)" default="1" lvalues="32021|32022|32023"/>
 		<setting label="32030" type="slider" id="stayinplace" subsetting="true" visible="eq(-2,0)" default="10" range="5,5,60" option="int"/>
 		<setting id="timeformat" type="select" label="32040" default="0" lvalues="32041|32042|32043"/>

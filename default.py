@@ -217,11 +217,14 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         if self.movementtype == 0:
             self.waittimer = 0.5
             self.multiplier = 2
-        else:
+        elif self.movementtype == 1:
             self.waittimer = 0.02
             self.multiplier = 50
             self.dx = random.choice([-(self.movementspeed+1),(self.movementspeed+1)])
             self.dy = random.choice([-(self.movementspeed+1),(self.movementspeed+1)])
+        else:
+            self.waittimer = 0.5
+            self.multiplier = 2
 		
 		#setting up the screen size
         self.screeny = 720 - self.container.getHeight()
@@ -257,7 +260,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.container.setPosition(new_x,new_y)
                     self.waitcounter = 0
                     self.setCTR()
-            else:
+            elif self.movementtype == 1:
                 #bounce
                 self.currentposition = self.container.getPosition()
                 new_x = self.currentposition[0]+self.dx
