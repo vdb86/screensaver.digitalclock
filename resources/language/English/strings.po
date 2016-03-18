@@ -365,3 +365,11 @@ msgstr ""
 msgctxt "#32242"
 msgid "10 min"
 msgstr ""
+
+msgctxt "#32300"
+msgid "Element size increase"
+msgstr ""
+
+msgctxt "#32310"
+msgid "Size (%)"
+msgstr ""
