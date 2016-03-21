@@ -1,5 +1,5 @@
 [B]3.6.0[/B]
-- Added more zoom values and removed unnecessary weather updating
+- Added more zoom values and removed unnecessary weather updating, added support for skin Eunique and KOver
 
 [B]3.5.0[/B]
 - Added zoom effect for increasing text and icons
