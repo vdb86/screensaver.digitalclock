@@ -1,5 +1,8 @@
+[B]3.7.0[/B]
+- Fixed up the code a bit and added support for estouchy skin and estuary skin
+
 [B]3.6.0[/B]
-- Added more zoom values and removed unnecessary weather updating, added support for skin Eunique and KOver
+- Added more zoom values and removed unnecessary weather updating
 
 [B]3.5.0[/B]
 - Added zoom effect for increasing text and icons
