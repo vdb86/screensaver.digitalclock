@@ -103,3 +103,6 @@ Possible issues:
 Depending on your language and selected date format the date text might become ... that means that the text for the date is too long, I can fix that easily, just let me know if it happens. (Screenshot would be great including which language you are using and how many letters are supposed to be on the screen).
 
 Everything else should work just fine, let me know if you encounter any bugs or issues.
+
+We're on Transifex!
+Feel free to translate screensaver.digitalclock to your language: https://www.transifex.com/teamxbmc/kodi-...italclock/
