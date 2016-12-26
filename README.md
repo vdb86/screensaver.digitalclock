@@ -5,12 +5,14 @@ Digital clock screensaver with date, now playing information, weather informatio
 
 These are the options:
 
-Movement|Format
+Movement
 - Movement on the screen (Random position, Bounce movement, Fixed in the center, Custom position)
 - Bounce movement speed
 - Number of seconds to stay in place (Number of seconds that the clock will stay in place before moving to a random location)
+
+Format
 - Time format
-- Date format
+- Date format (Includes custom format)
 
 Additional Information
 - Enable additional information
@@ -42,12 +44,13 @@ Transparency (Users can choose either to have a random transparency every time t
 
 Background
 - Text shadow color
-- Choose background (One color, Single image, Slideshow)
+- Choose background (One color, Single image, Slideshow, Skin Helper)
 - Choose color
 - Choose image
 - Choose slideshow directory
 - Random images (Screensaver chooses a random image from the folder for the background)
 - Change background picture every
+- Choose Skin Helper background (Movie random fanart, TV show random fanart, Music artist random fanart, Random fanart of all media types) 
 
 Element Size Increase (Users can increase the size of text and icons)
 - Size (%)
