@@ -12,6 +12,7 @@ Movement
 
 Format
 - Time format
+- Colon blink
 - Date format (Includes custom format)
 
 Additional Information

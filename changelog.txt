@@ -3,6 +3,7 @@
 - Fixed the zoom bug (when part of the information gets off the screen)
 - Added custom date format
 - Added Skin Helper background option
+- Added colon blink option
 
 [B]3.8.0[/B]
 - Repacked the options
