@@ -240,7 +240,33 @@ msgctxt "#32250"
 msgid "Enable album art"
 msgstr ""
 
-#empty strings from id 32251 to 32299
+#empty strings from id 32251 to 32259
+
+msgctxt "#32260"
+msgid "Enable CPU usage information"
+msgstr ""
+
+msgctxt "#32261"
+msgid "Enable battery level information"
+msgstr ""
+
+msgctxt "#32262"
+msgid "Enable free memory information"
+msgstr ""
+
+msgctxt "#32263"
+msgid "Enable movie library information"
+msgstr ""
+
+msgctxt "#32264"
+msgid "Enable TV show library information"
+msgstr ""
+
+msgctxt "#32265"
+msgid "Enable music library information"
+msgstr ""
+
+#empty strings from id 32266 to 32299
 
 msgctxt "#32300"
 msgid "Random color"

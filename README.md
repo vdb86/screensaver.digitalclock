@@ -20,6 +20,12 @@ Additional Information
 - Number of seconds for information switch (Number of seconds before the information will be switched with another one, i.e. Artist - Song - Weather information)
 - Enable now playing information
 - Enable weather information
+- Enable CPU usage information
+- Enable battery level information
+- Enable free memory information
+- Enable movie library information (Total, Watched, Unwatched)
+- Enable TV show library information (Total, Watched, Unwatched)
+- Enable music library information (Artists, Albums, Songs)
 - Weather icons
 - Enable album art
 
@@ -109,4 +115,4 @@ Depending on your language and selected date format the date text might become .
 Everything else should work just fine, let me know if you encounter any bugs or issues.
 
 We're on Transifex!
-Feel free to translate screensaver.digitalclock to your language: https://www.transifex.com/teamxbmc/kodi-...italclock/
+Feel free to translate screensaver.digitalclock to your language: https://www.transifex.com/teamxbmc/kodi-addons/screensaver-digitalclock/

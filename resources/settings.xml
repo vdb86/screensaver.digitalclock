@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="32000">
-        <setting label="32100" type="select" id="movementtype" default="1" lvalues="32101|32102|32103|32104"/>
-		<setting label="32110" type="enum" id="movementspeed" subsetting="true" visible="eq(-1,Bounce)" default="1" lvalues="32111|32112|32113"/>
-		<setting label="32120" type="slider" id="stayinplace" subsetting="true" visible="eq(-2,Random position)" default="10" range="5,5,60" option="int"/>
-        <setting label="32121" type="lsep" visible="eq(-3,Fixed in the center) | eq(-3,Custom fixed position)"/>		
-		<setting label="32150" type="number" id="customx" subsetting="true" visible="eq(-4,Custom fixed position)" default="1" option="int"/>
-		<setting label="32160" type="number" id="customy" subsetting="true" visible="eq(-5,Custom fixed position)" default="1" option="int"/>
+        <setting label="32100" type="enum" id="movementtype" default="1" lvalues="32101|32102|32103|32104"/>
+		<setting label="32110" type="enum" id="movementspeed" subsetting="true" visible="eq(-1,1)" default="1" lvalues="32111|32112|32113"/>
+		<setting label="32120" type="slider" id="stayinplace" subsetting="true" visible="eq(-2,0)" default="10" range="5,5,60" option="int"/>
+        <setting label="32121" type="lsep" visible="eq(-3,2) | eq(-3,3)"/>		
+		<setting label="32150" type="number" id="customx" subsetting="true" visible="eq(-4,3)" default="1" option="int"/>
+		<setting label="32160" type="number" id="customy" subsetting="true" visible="eq(-5,3)" default="1" option="int"/>
     </category>
 		<category label="32001">	
 		<setting id="timeformat" type="select" label="32130" default="0" lvalues="32131|32132|32133"/>
 		<setting label="32139" type="bool" id="colonblink" default="true"/>		
-		<setting id="dateformat" type="select" label="32140" default="1" lvalues="32141|32142|32143|32144|32145"/>
-		<setting label="32170" type="text" id="customdateformat" subsetting="true" visible="eq(-1,Custom)"/>		
-		<setting label="32171" type="lsep" visible="eq(-2,Custom)"/>
-		<setting label="32172" type="lsep" visible="eq(-3,Custom)"/>
-		<setting label="32173" type="lsep" visible="eq(-4,Custom)"/>
+		<setting id="dateformat" type="enum" label="32140" default="1" lvalues="32141|32142|32143|32144|32145"/>
+		<setting label="32170" type="text" id="customdateformat" subsetting="true" visible="eq(-1,4)"/>		
+		<setting label="32171" type="lsep" visible="eq(-2,4)"/>
+		<setting label="32172" type="lsep" visible="eq(-3,4)"/>
+		<setting label="32173" type="lsep" visible="eq(-4,4)"/>
     </category>	
     <category label="32005">
 		<setting label="32200" type="bool" id="additionalinformation" default="false"/>
 		<setting label="32210" type="slider" id="infoswitch" subsetting="true" visible="eq(-1,true)" default="5" range="5,5,30" option="int"/>		
 		<setting label="32220" type="bool" id="nowplayinginfoshow" subsetting="true" visible="eq(-2,true)" default="false"/>
-		<setting label="32230" type="bool" id="weatherinfoshow" subsetting="true" visible="eq(-3,true)" default="false"/>
-		<setting id="weathericonformat" type="select" label="32240" subsetting="true" visible="eq(-4,true)" default="1" lvalues="32241|32242|32243|32244|32245"/>		
-        <setting label="32250" type="bool" id="albumartshow" subsetting="true" visible="eq(-5,true)" default="false"/>
+        <setting label="32260" type="bool" id="cpuusage" subsetting="true" visible="eq(-3,true)" default="false"/>
+        <setting label="32261" type="bool" id="batterylevel" subsetting="true" visible="eq(-4,true)" default="false"/>
+        <setting label="32262" type="bool" id="freememory" subsetting="true" visible="eq(-5,true)" default="false"/>
+        <setting label="32263" type="bool" id="movies" subsetting="true" visible="eq(-6,true)" default="false"/>
+        <setting label="32264" type="bool" id="tvshows" subsetting="true" visible="eq(-7,true)" default="false"/>
+        <setting label="32265" type="bool" id="music" subsetting="true" visible="eq(-8,true)" default="false"/>		
+		<setting label="32230" type="bool" id="weatherinfoshow" subsetting="true" visible="eq(-9,true)" default="false"/>
+		<setting id="weathericonformat" type="select" label="32240" subsetting="true" visible="eq(-10,true)" default="1" lvalues="32241|32242|32243|32244|32245"/>		
+        <setting label="32250" type="bool" id="albumartshow" subsetting="true" visible="eq(-11,true)" default="false"/>
 		</category>	
     <category label="32010">
 		<setting label="32300" type="bool" id="randomcolor" default="false"/>	
