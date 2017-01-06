@@ -19,13 +19,13 @@ Additional Information
 - Enable additional information
 - Number of seconds for information switch (Number of seconds before the information will be switched with another one, i.e. Artist - Song - Weather information)
 - Enable now playing information
-- Enable weather information
 - Enable CPU usage information
 - Enable battery level information
 - Enable free memory information
 - Enable movie library information (Total, Watched, Unwatched)
 - Enable TV show library information (Total, Watched, Unwatched)
 - Enable music library information (Artists, Albums, Songs)
+- Enable weather information
 - Weather icons
 - Enable album art
 
