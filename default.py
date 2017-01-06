@@ -24,7 +24,6 @@ import os
 from datetime import datetime
 
 Addon = xbmcaddon.Addon('screensaver.digitalclock')
-
 path = Addon.getAddonInfo('path').decode("utf-8")
 location = xbmc.getSkinDir()
 scriptname = location + '.xml'
@@ -35,6 +34,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 	#setting up zoom
     window = xbmcgui.Window(12900)	
     window.setProperty("zoomamount",Addon.getSetting('zoomlevel'))
+    del window	
 	
     class ExitMonitor(xbmc.Monitor):
 
@@ -45,7 +45,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.exit_callback()
 
     def onInit(self):
-        self.log('INIT')
+        xbmc.log('Digital Clock Screensaver %s: Initialising' %Addonversion)
         self.abort_requested = False
         self.started = False
         self.exit_monitor = self.ExitMonitor(self.exit)
@@ -159,8 +159,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.shadow_colorcontrol.setLabel(self.shadowcolor[int(self.shadowf)])
      
         #setting up information
-        if self.informationshow == 'true':
-            self.informationlist = []		
+        self.informationlist = []		
+        if self.informationshow == 'true':		
             if self.nowplayinginfoshow == 'true':
                 if xbmc.getInfoLabel('MusicPlayer.Artist') and xbmc.getInfoLabel('MusicPlayer.Title'):
                     self.informationlist.append('$INFO[MusicPlayer.Artist]')
@@ -224,7 +224,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.informationshow == 'true':
                 if len(self.informationlist) != 0:
                     if not((self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
-                        self.container.setHeight(int(160 + 70 * (self.zoom / 100 - 1)))
+                        self.container.setHeight(int(180 + 50 * (self.zoom / 100 - 1)))
                         self.icon_control.setVisible(False)						
                 else:
                     if ((self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
@@ -357,12 +357,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.colon_control.setVisible(True)
 				
             self.monitor.waitForAbort(self.waittimer)
-			
-        if self.abort_requested:
-            self.log('Digital Clock abort_requested')
-            self.exit()
-            return
-			
+					
     def setCTR(self):
         if self.randomcolor == 'false' and self.randomtr == 'false':
             self.hourcolor = self.transparency[self.trh] + self.color[self.ch]
@@ -444,14 +439,11 @@ class Screensaver(xbmcgui.WindowXMLDialog):
     def exit(self):
         self.abort_requested = True
         self.exit_monitor = None
-        self.log('exit')
+        xbmc.log('Digital Clock Screensaver %s: Abort requested' %Addonversion)
         self.close()
 
-    def log(self, msg):
-        xbmc.log(u'Digital Clock Screensaver: %s' % msg)
-
 if __name__ == '__main__':
-    xbmc.log('Digital Clock Screensaver version %s started' % Addonversion)
+    xbmc.log('Digital Clock Screensaver %s: Started' %Addonversion)
     if(os.path.isfile(xbmc.translatePath('special://skin/1080i/script-screensaver-digitalclock-custom.xml'))):
         screensaver = Screensaver('script-screensaver-digitalclock-custom.xml', xbmc.translatePath('special://skin/1080i/'), 'default')
     elif(os.path.isfile(xbmc.translatePath('special://skin/720p/script-screensaver-digitalclock-custom.xml'))):
@@ -468,5 +460,5 @@ if __name__ == '__main__':
         screensaver = Screensaver('skin.default.xml', path, 'default')	
     screensaver.doModal()
     del screensaver
-    xbmc.log('Digital Clock Screensaver stopped')	
+    xbmc.log('Digital Clock Screensaver %s: Stopped' %Addonversion)	
     sys.modules.clear()
