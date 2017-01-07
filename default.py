@@ -61,6 +61,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.waitcounter = 0
         self.switchcounter = 0
         self.iconswitchcounter = 0
+        self.logoutcounter = 0		
         self.switch = 0
         self.iconswitch = 0	
         self.movementtype = int(Addon.getSetting('movementtype'))
@@ -104,6 +105,9 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.ci = int(Addon.getSetting('informationcolor'))
         self.cw = int(Addon.getSetting('iconcolor'))
         self.zoom = float(Addon.getSetting('zoomlevel'))
+        self.logout = Addon.getSetting('logout')
+        self.logoutplaying = Addon.getSetting('logoutplaying')
+        self.logouttime = int(Addon.getSetting('logouttime'))
         self.hour_colorcontrol = self.getControl(30105)
         self.colon_colorcontrol = self.getControl(30106)
         self.minute_colorcontrol = self.getControl(30107)
@@ -303,7 +307,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.movementtype == 0:			
                 #random movement
                 self.waitcounter += 1			
-                if self.waitcounter == (self.multiplier*self.stayinplace):
+                if self.waitcounter >= (self.multiplier*self.stayinplace):
                     new_x = random.randint(self.screenxs,self.screenxe)
                     new_y = random.randint(self.screenys,self.screenye)
                     self.container.setPosition(new_x,new_y)
@@ -330,7 +334,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 			#slideshow
             if self.background == '2':
                 self.slideshowcounter +=1
-                if self.slideshowcounter == (self.multiplier*self.imagetimer):
+                if self.slideshowcounter >= (self.multiplier*self.imagetimer):
                     if self.randomimages =='true':
                         self.nextfile = random.randint(0,self.number)
                     self.path = self.folder + self.files[self.nextfile]
@@ -343,7 +347,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 			#skin helper
             if self.background == '3':
                 self.slideshowcounter +=1
-                if self.slideshowcounter == (self.multiplier*self.imagetimer):
+                if self.slideshowcounter >= (self.multiplier*self.imagetimer):
                     self.image_control.setImage(xbmc.getInfoLabel(self.skinhelperimage))
                     self.slideshowcounter = 0
 				
@@ -355,6 +359,22 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.colon_control.setVisible(False)
             else:					
                 self.colon_control.setVisible(True)
+				
+			#log out
+            if self.logout == 'true' and xbmc.getCondVisibility('Window.Previous(loginscreen)') == 0:
+                self.logoutcounter +=1
+                if self.logoutcounter >= (self.multiplier*self.logouttime*60):
+                    if xbmc.getCondVisibility('Player.HasMedia') == 1:
+                        if self.logoutplaying == 'true':
+                            xbmc.executebuiltin("PlayerControl(Stop)")
+                            xbmc.log('Digital Clock Screensaver %s: Stopping media' %Addonversion)							
+                            xbmc.executebuiltin("System.LogOff")
+                            xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)						
+                            self.logoutcounter = 0
+                    else:
+                        xbmc.executebuiltin("System.LogOff")
+                        xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)						
+                        self.logoutcounter = 0			
 				
             self.monitor.waitForAbort(self.waittimer)
 					
@@ -401,7 +421,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.colon_control.setLabel(" : ")   			
         self.minute_control.setLabel(datetime.now().strftime("%M"))
         self.ampm_control.setLabel(datetime.now().strftime("%p"))
-        self.date_control.setLabel(self.date)	
+        self.date_control.setLabel(self.date)
         if len(self.informationlist) != 0:
             self.information_control.setLabel(self.information)
         if self.weathericonf != '0' or self.albumartshow == 'true':
@@ -459,6 +479,7 @@ if __name__ == '__main__':
     else:
         screensaver = Screensaver('skin.default.xml', path, 'default')	
     screensaver.doModal()
+    screensaver.close()
     del screensaver
     xbmc.log('Digital Clock Screensaver %s: Stopped' %Addonversion)	
     sys.modules.clear()

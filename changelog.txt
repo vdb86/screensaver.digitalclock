@@ -1,4 +1,5 @@
 [B]4.0.0[/B]
+- Added log out option
 - Added additional information:
 - CPU usage
 - Battery level

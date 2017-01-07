@@ -59,8 +59,11 @@ Background
 - Change background picture every
 - Choose Skin Helper background (Movie random fanart, TV show random fanart, Music artist random fanart, Random fanart of all media types) 
 
-Element Size Increase (Users can increase the size of text and icons)
-- Size (%)
+Extra Options
+- Element Size Increase (%) (Users can increase the size of text and icons)
+- Log out
+- Stop now playing media
+- Log out after (minutes)
 
 This screensaver is configured for every skin separately since it has to use Fonts defined by the skin!
 

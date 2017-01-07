@@ -53,7 +53,7 @@ msgstr ""
 #empty strings from id 32021 to 32024
 
 msgctxt "#32025"
-msgid "Element Size Increase"
+msgid "Extra Options"
 msgstr ""
 
 #empty strings from id 32026 to 32099
@@ -585,5 +585,17 @@ msgstr ""
 #empty strings from id 32585 to 32599
 
 msgctxt "#32600"
-msgid "Size (%)"
+msgid "Element size increase (%)"
+msgstr ""
+
+msgctxt "#32610"
+msgid "Log out"
+msgstr ""
+
+msgctxt "#32611"
+msgid "Stop now playing media"
+msgstr ""
+
+msgctxt "#32612"
+msgid "Log out after (minutes)"
 msgstr ""

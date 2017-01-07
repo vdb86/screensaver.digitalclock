@@ -64,6 +64,9 @@
 		<setting id="imagetimer" type="select" label="32560" subsetting="true" visible="eq(-8,2) | eq(-8,3)" default="0" lvalues="32561|32562|32563|32564|32565|32566|32567|32568|32569|32570|32571|32572"/>
 	</category>
     <category label="32025">
-        <setting id="zoomlevel" type="select" label="32600" default="100" values="100|110|120|130|140|150|160|170|180|190|200" />		
+        <setting id="zoomlevel" type="select" label="32600" default="100" values="100|110|120|130|140|150|160|170|180|190|200"/>
+		<setting label="32610" type="bool" id="logout" default="false"/>
+		<setting label="32611" type="bool" id="logoutplaying" subsetting="true" visible="eq(-1,true)" default="false"/>
+		<setting label="32612" type="number" id="logouttime" subsetting="true" visible="eq(-2,true)" default="10" option="int"/>		
 	</category>		
 </settings>
