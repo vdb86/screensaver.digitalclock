@@ -120,7 +120,8 @@ Everything else should work just fine, let me know if you encounter any bugs or 
 We're on Transifex!
 Feel free to translate screensaver.digitalclock to your language: https://www.transifex.com/teamxbmc/kodi-addons/screensaver-digitalclock/
 
-[size=medium][b]Support:[/b][/size]
+__Support__
+
 If this screensaver is on your screen consider buying me a beer :)
 
-[align=center][url=https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=UUQXBVL8H44X8&lc=US&item_name=screensaver%2edigitalclock&item_number=screensaver%2edigitalclock&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted][img]https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif[/img][/url][/align]
+[![Support](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=UUQXBVL8H44X8&lc=US&item_name=screensaver%2edigitalclock&item_number=screensaver%2edigitalclock&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
