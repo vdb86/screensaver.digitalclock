@@ -110,7 +110,7 @@ If the skin is not on the list screensaver will use default font names from conf
 
 If your skin is not on the list, and you would like it to be - send me a message.
 
-I have tested this screensaver with a couple of languages and on two systems, windows 7 laptop and Raspberry Pi 2 running Openelec.
+I have tested this screensaver with a couple of languages and on two systems, windows 7 laptop and Raspberry Pi 2 running OSMC.
 
 Possible issues:
 Depending on your language and selected date format the date text might become ... that means that the text for the date is too long, I can fix that easily, just let me know if it happens. (Screenshot would be great including which language you are using and how many letters are supposed to be on the screen).
