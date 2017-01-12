@@ -1,5 +1,7 @@
 [B]4.0.0[/B]
 - Added log out option
+- Added support for script.skin.helper.colorpicker (Thanks Marcel!)
+- Rewritten color and transparency options, now users can pick their color instead of choosing one of the few predefined ones
 - Added additional information:
 - CPU usage
 - Battery level

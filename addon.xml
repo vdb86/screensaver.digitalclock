@@ -5,6 +5,8 @@
         provider-name="Vojislav Vlasic">
         <requires>
         	<import addon="xbmc.python" version="2.20.0"/>
+			<import addon="script.skin.helper.service" version="1.0.144"/>
+			<import addon="script.skin.helper.colorpicker" version="1.0.9"/>
   	</requires>
   	<extension point="xbmc.ui.screensaver" library="default.py"/>
   	<extension point="xbmc.addon.metadata">

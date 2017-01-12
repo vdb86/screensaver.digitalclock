@@ -29,35 +29,38 @@ Additional Information
 - Weather icons
 - Enable album art
 
-Colors (Users can choose either to have a random color every time the clock moves or one from the list)
-- Random color
-- Hour color
-- Colon color
-- Minute color color
-- AM/PM color
-- Date color
-- Additional information color
-- Icon color
-
-Transparency (Users can choose either to have a random transparency every time the clock moves or one from the list)
-- Random transparency
-- Hour transparency
-- Colon transparency
-- Minute color transparency
-- AM/PM transparency
-- Date transparency
-- Additional information transparency
-- Icon transparency
+Color | Opacity (Users can choose color and opacity for every element, along with random color and random opacity) - Implemented using script.skin.helper.colorpicker - Thanks Marcel!
+- Choose hour color and opacity
+- Random hour color
+- Random hour opacity
+- Choose colon color and opacity
+- Random colon color
+- Random colon opacity
+- Choose minute color and opacity
+- Random minute color
+- Random minute opacity
+- Choose AM/PM color and opacity
+- Random AM/PM color
+- Random AM/PM opacity
+- Choose date color and opacity
+- Random date color
+- Random date opacity
+- Choose additional information color and opacity
+- Random additional information color
+- Random additional information opacity
+- Choose icon color and opacity
+- Random icon color
+- Random icon opacity
 
 Background
-- Text shadow color
+- Choose text shadow color
 - Choose background (One color, Single image, Slideshow, Skin Helper)
-- Choose color
+- Choose background color
 - Choose image
 - Choose slideshow directory
 - Random images (Screensaver chooses a random image from the folder for the background)
 - Change background picture every
-- Choose Skin Helper background (Movie random fanart, TV show random fanart, Music artist random fanart, Random fanart of all media types) 
+- Choose Skin Helper background (Movie random fanart, TV show random fanart, Music artist random fanart, Random fanart of all media types)
 
 Extra Options
 - Element Size Increase (%) (Users can increase the size of text and icons)
