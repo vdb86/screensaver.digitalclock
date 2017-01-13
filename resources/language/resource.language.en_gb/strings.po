@@ -337,11 +337,11 @@ msgid "Choose additional information color and opacity - [COLOR $INFO[Skin.Strin
 msgstr ""
 
 msgctxt "#32361"
-msgid "Random information color"
+msgid "Random additional information color"
 msgstr ""
 
 msgctxt "#32362"
-msgid "Random information opacity"
+msgid "Random additional information opacity"
 msgstr ""
 
 #empty strings from id 32363 to 32369
