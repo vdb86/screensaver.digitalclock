@@ -193,26 +193,29 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 if xbmc.getInfoLabel('VideoPlayer.Title'):
                     self.informationlist.append('$INFO[VideoPlayer.Title]')
             if self.cpuusage == 'true' and xbmc.getInfoLabel('System.CpuUsage'):
-                self.informationlist.append("$LOCALIZE[140] $INFO[System.CpuUsage]")
+                if xbmc.getInfoLabel('System.CpuUsage').count('%') > 1:
+                    self.informationlist.append("$INFO[System.CpuUsage]")
+                else:
+                    self.informationlist.append("$ADDON[screensaver.digitalclock 32280] $INFO[System.CpuUsage]")					
             if self.batterylevel == 'true' and xbmc.getInfoLabel('System.BatteryLevel'):
-                self.informationlist.append("$LOCALIZE[12395]: $INFO[System.BatteryLevel]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32281] $INFO[System.BatteryLevel]")
             if self.freememory == 'true' and xbmc.getInfoLabel('System.FreeMemory'):
-                self.informationlist.append("$LOCALIZE[158]: $INFO[System.FreeMemory]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32282] $INFO[System.FreeMemory]")
             if self.movies == 'true' and xbmc.getInfoLabel('Window(Home).Property(Movies.Count)'):
-                self.informationlist.append("$LOCALIZE[20342]: $INFO[Window(Home).Property(Movies.Count)]")
-                self.informationlist.append("$LOCALIZE[20342]-$LOCALIZE[16102]: $INFO[Window(Home).Property(Movies.Watched)]")
-                self.informationlist.append("$LOCALIZE[20342]-$LOCALIZE[16101]: $INFO[Window(Home).Property(Movies.UnWatched)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32283] $INFO[Window(Home).Property(Movies.Count)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32284] $INFO[Window(Home).Property(Movies.Watched)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32285] $INFO[Window(Home).Property(Movies.UnWatched)]")
             if self.tvshows == 'true' and xbmc.getInfoLabel('Window(Home).Property(TVShows.Count)'):
-                self.informationlist.append("$LOCALIZE[20343]: $INFO[Window(Home).Property(TVShows.Count)]")
-                self.informationlist.append("$LOCALIZE[20360]: $INFO[Window(Home).Property(Episodes.Count)]")
-                self.informationlist.append("$LOCALIZE[20343]-$LOCALIZE[16102]: $INFO[Window(Home).Property(TVShows.Watched)]")
-                self.informationlist.append("$LOCALIZE[20360]-$LOCALIZE[16102]: $INFO[Window(Home).Property(Episodes.Watched)]")
-                self.informationlist.append("$LOCALIZE[20343]-$LOCALIZE[16101]: $INFO[Window(Home).Property(TVShows.UnWatched)]")
-                self.informationlist.append("$LOCALIZE[20360]-$LOCALIZE[16101]: $INFO[Window(Home).Property(Episodes.UnWatched)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32286] $INFO[Window(Home).Property(TVShows.Count)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32287] $INFO[Window(Home).Property(Episodes.Count)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32288] $INFO[Window(Home).Property(TVShows.Watched)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32289] $INFO[Window(Home).Property(Episodes.Watched)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32290] $INFO[Window(Home).Property(TVShows.UnWatched)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32291] $INFO[Window(Home).Property(Episodes.UnWatched)]")
             if self.music == 'true' and xbmc.getInfoLabel('Window(Home).Property(Music.SongsCount)'):
-                self.informationlist.append("$LOCALIZE[133]: $INFO[Window(Home).Property(Music.ArtistsCount)]")
-                self.informationlist.append("$LOCALIZE[132]: $INFO[Window(Home).Property(Music.AlbumsCount)]")
-                self.informationlist.append("$LOCALIZE[134]: $INFO[Window(Home).Property(Music.SongsCount)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32292] $INFO[Window(Home).Property(Music.ArtistsCount)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32293] $INFO[Window(Home).Property(Music.AlbumsCount)]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32294] $INFO[Window(Home).Property(Music.SongsCount)]")
             if self.weatherinfoshow == 'true' and xbmc.getInfoLabel('Weather.Location'):
                 self.informationlist.append("$INFO[Weather.Temperature] - $INFO[Weather.Conditions]")
             if len(self.informationlist) != 0:

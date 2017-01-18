@@ -260,7 +260,69 @@ msgctxt "#32265"
 msgid "Enable music library information"
 msgstr ""
 
-#empty strings from id 32266 to 32309
+#empty strings from id 32266 to 32279
+
+msgctxt "#32280"
+msgid "CPU:"
+msgstr ""
+
+msgctxt "#32281"
+msgid "Battery:"
+msgstr ""
+
+msgctxt "#32282"
+msgid "Free memory:"
+msgstr ""
+
+msgctxt "#32283"
+msgid "Total movies:"
+msgstr ""
+
+msgctxt "#32284"
+msgid "Watched movies:"
+msgstr ""
+
+msgctxt "#32285"
+msgid "Unwatched movies:"
+msgstr ""
+
+msgctxt "#32286"
+msgid "Total TV shows:"
+msgstr ""
+
+msgctxt "#32287"
+msgid "Total episodes:"
+msgstr ""
+
+msgctxt "#32288"
+msgid "Watched TV shows:"
+msgstr ""
+
+msgctxt "#32289"
+msgid "Watched episodes:"
+msgstr ""
+
+msgctxt "#32290"
+msgid "Unwatched TV shows:"
+msgstr ""
+
+msgctxt "#32291"
+msgid "Unwatched episodes:"
+msgstr ""
+
+msgctxt "#32292"
+msgid "Artists:"
+msgstr ""
+
+msgctxt "#32293"
+msgid "Albums:"
+msgstr ""
+
+msgctxt "#32294"
+msgid "Songs:"
+msgstr ""
+
+#empty strings from id 32295 to 32309
 
 msgctxt "#32310"
 msgid "Choose hour color and opacity  - [COLOR $INFO[Skin.String(screensaver.digitalclock.hourcolor)]]($INFO[Skin.String(screensaver.digitalclock.hourcolor.name)])[/COLOR]"
