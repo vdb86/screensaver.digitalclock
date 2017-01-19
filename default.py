@@ -200,7 +200,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.batterylevel == 'true' and xbmc.getInfoLabel('System.BatteryLevel'):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32281] $INFO[System.BatteryLevel]")
             if self.freememory == 'true' and xbmc.getInfoLabel('System.FreeMemory'):
-                self.informationlist.append("$ADDON[screensaver.digitalclock 32282] $INFO[System.FreeMemory]")
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32282] $INFO[System.FreeMemory] ($INFO[System.Memory(free.percent)])")
             if self.movies == 'true' and xbmc.getInfoLabel('Window(Home).Property(Movies.Count)'):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32283] $INFO[Window(Home).Property(Movies.Count)]")
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32284] $INFO[Window(Home).Property(Movies.Watched)]")
