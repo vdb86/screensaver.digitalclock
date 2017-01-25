@@ -5,7 +5,7 @@
         provider-name="Vojislav Vlasic">
         <requires>
         	<import addon="xbmc.python" version="2.20.0"/>
-		<import addon="xbmc.addon" version="12.0.0"/>
+		<import addon="xbmc.addon" version="15.0.0"/>
 		<import addon="script.skin.helper.service" version="1.0.100"/>
 		<import addon="script.skin.helper.colorpicker" version="1.0.1"/>
   	</requires>
