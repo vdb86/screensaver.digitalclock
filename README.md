@@ -5,17 +5,17 @@ Digital clock screensaver with date, now playing information, weather informatio
 
 These are the options:
 
-Movement
+__Movement__
 - Movement on the screen (Random position, Bounce movement, Fixed in the center, Custom position)
 - Bounce movement speed
 - Number of seconds to stay in place (Number of seconds that the clock will stay in place before moving to a random location)
 
-Format
+__Format__
 - Time format
 - Colon blink
 - Date format (Includes custom format)
 
-Additional Information
+__Additional Information__
 - Enable additional information
 - Number of seconds for information switch (Number of seconds before the information will be switched with another one, i.e. Artist - Song - Weather information)
 - Enable now playing information
@@ -35,7 +35,7 @@ Additional Information
 - Weather icons
 - Enable album art
 
-Color | Opacity (Users can choose color and opacity for every element, along with random color and random opacity) - Implemented using script.skin.helper.colorpicker - Thanks Marcel!
+__Color | Opacity__ (Users can choose color and opacity for every element, along with random color and random opacity) - Implemented using script.skin.helper.colorpicker - Thanks Marcel!
 - Choose hour color and opacity
 - Random hour color
 - Random hour opacity
@@ -58,7 +58,7 @@ Color | Opacity (Users can choose color and opacity for every element, along wit
 - Random icon color
 - Random icon opacity
 
-Background
+__Background__
 - Choose text shadow color
 - Choose background (One color, Single image, Slideshow, Skin Helper)
 - Choose background color
@@ -68,7 +68,7 @@ Background
 - Change background picture every
 - Choose Skin Helper background (Movie random fanart, TV show random fanart, Music artist random fanart, Random fanart of all media types)
 
-Extra Options
+__Extra Options__
 - Element Size Increase (%) (Users can increase the size of text and icons)
 - Log out
 - Stop now playing media
