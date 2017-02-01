@@ -84,6 +84,12 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.cpuusage = Addon.getSetting('cpuusage')
         self.batterylevel = Addon.getSetting('batterylevel')
         self.freememory = Addon.getSetting('freememory')
+        self.cputemp = Addon.getSetting('cputemp')
+        self.gputemp = Addon.getSetting('gputemp')
+        self.hddtemp = Addon.getSetting('hddtemp')
+        self.fps = Addon.getSetting('fps')
+        self.cuptime = Addon.getSetting('cuptime')
+        self.tuptime = Addon.getSetting('tuptime')
         self.movies = Addon.getSetting('movies')
         self.tvshows = Addon.getSetting('tvshows')
         self.music = Addon.getSetting('music')
@@ -201,6 +207,18 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32281] $INFO[System.BatteryLevel]")
             if self.freememory == 'true' and xbmc.getInfoLabel('System.FreeMemory'):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32282] $INFO[System.FreeMemory] ($INFO[System.Memory(free.percent)])")
+            if self.cputemp == 'true' and xbmc.getInfoLabel('System.CPUTemperature'):
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32295] $INFO[System.CPUTemperature]")
+            if self.gputemp == 'true' and xbmc.getInfoLabel('System.GPUTemperature'):
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32296] $INFO[System.GPUTemperature]")
+            if self.hddtemp == 'true' and xbmc.getInfoLabel('System.HddTemperature'):
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32297] $INFO[System.HddTemperature]")
+            if self.fps == 'true' and xbmc.getInfoLabel('System.FPS'):
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32298] $INFO[System.FPS]")
+            if self.cuptime == 'true' and xbmc.getInfoLabel('System.Uptime'):
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32299] $INFO[System.Uptime]")
+            if self.tuptime == 'true' and xbmc.getInfoLabel('System.TotalUptime'):
+                self.informationlist.append("$ADDON[screensaver.digitalclock 32300] $INFO[System.TotalUptime]")
             if self.movies == 'true' and xbmc.getInfoLabel('Window(Home).Property(Movies.Count)'):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32283] $INFO[Window(Home).Property(Movies.Count)]")
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32284] $INFO[Window(Home).Property(Movies.Watched)]")

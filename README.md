@@ -22,6 +22,12 @@ Additional Information
 - Enable CPU usage information
 - Enable battery level information
 - Enable free memory information
+- CPU temperature (Depends on the system if it will work or not)
+- GPU temperature (Depends on the system if it will work or not)
+- HDD temperature (Depends on the system if it will work or not)
+- FPS
+- Current uptime
+- Total uptime
 - Enable movie library information (Total, Watched, Unwatched)
 - Enable TV show library information (Total, Watched, Unwatched)
 - Enable music library information (Artists, Albums, Songs)
