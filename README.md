@@ -1,7 +1,7 @@
 Digital clock screensaver
 =================
 
-Digital clock screensaver with date, now playing information, weather information, image slideshow and several options.
+Digital clock screensaver with a lot of options.
 
 These are the options:
 
