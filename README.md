@@ -76,9 +76,9 @@ __Extra Options__
 
 This screensaver is configured for every skin separately since it has to use Fonts defined by the skin!
 
-Skin developers have an option to use script-screensaver-digitalclock-custom.xml in their skins 1080i,720p... folder.
+Skin developers have an option to use script-screensaver-digitalclock-custom.xml in their skins 1080i, 720p... folder.
 They should provide and maintain that xml file with their skin!
-Screensaver will check for skin folders in this order: 1080i,720p, 21x9 16x9, 4x3Hirez.
+Screensaver will check for skin folders in this order: 1080i, 720p, 21x9, 16x9, 4x3Hirez.
 If no script-screensaver-digitalclock-custom.xml is found screensaver will look for an appropriate xml file within screensavers folder.
 If there is no appropriate xml file it will use skin.default.xml
 
