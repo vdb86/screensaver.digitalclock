@@ -1,4 +1,5 @@
 [B]4.0.2[/B]
+- Added background image aspect ratio control
 - Added additional information:
 - CPU temperature (Depends on the system if it will work or not)
 - GPU temperature (Depends on the system if it will work or not)

@@ -474,7 +474,21 @@ msgctxt "#32500"
 msgid "Chose text shadow color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.shadowcolor)]]($INFO[Skin.String(screensaver.digitalclock.shadowcolor.name)])[/COLOR]"
 msgstr ""
 
-#empty strings from id 32501 to 32509
+#empty strings from id 32501 to 32504
+
+msgctxt "#32505"
+msgid "Chose background image aspect ratio:"
+msgstr ""
+
+msgctxt "#32506"
+msgid "Fill the screen"
+msgstr ""
+
+msgctxt "#32507"
+msgid "Original size"
+msgstr ""
+
+#empty strings from id 32508 to 32509
 
 msgctxt "#32510"
 msgid "Choose background"

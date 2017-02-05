@@ -60,6 +60,7 @@ __Color | Opacity__ (Users can choose color and opacity for every element, along
 
 __Background__
 - Choose text shadow color
+- Chose background image aspect ratio
 - Choose background (One color, Single image, Slideshow, Skin Helper)
 - Choose background color
 - Choose image

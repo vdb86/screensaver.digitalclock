@@ -57,6 +57,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.information_control = self.getControl(30110)
         self.container = self.getControl(30002)
         self.image_control = self.getControl(30020)
+        self.image_control2 = self.getControl(30022)
         self.icon_control = self.getControl(30021)
         self.hour_colorcontrol = self.getControl(30105)
         self.colon_colorcontrol = self.getControl(30106)
@@ -96,7 +97,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.weatherinfoshow = Addon.getSetting('weatherinfoshow')
         self.albumartshow = Addon.getSetting('albumartshow')
         self.weathericonf = Addon.getSetting('weathericonformat')
-        self.infoswitch = int(Addon.getSetting('infoswitch'))	
+        self.infoswitch = int(Addon.getSetting('infoswitch'))
+        self.aspectratio = int(Addon.getSetting('aspectratio'))
         self.background = Addon.getSetting('backgroundchoice')
         self.randomimages = Addon.getSetting('randomimages')
         self.skinhelper = int(Addon.getSetting('skinhelper'))
@@ -149,14 +151,23 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         if not(self.iconcolor):
              self.iconcolor = 'FFFFFFFF'
 
+        #setting up aspect ratio
+        if self.aspectratio == 0:
+            self.image_control2.setVisible(False)
+        if self.aspectratio == 1:
+            self.image_control.setVisible(False)
+
 		#setting up background and slideshow
         self.timer = ['15','30','60','120','180','240','300','360','420','480','540','600']
         self.slideshowcounter = 0
         if self.background == '0':
             self.image_control.setImage(os.path.join(path,"resources/media/white.png"))
             self.image_control.setColorDiffuse(self.backgroundcolor)
+            self.image_control2.setImage(os.path.join(path,"resources/media/white.png"))
+            self.image_control2.setColorDiffuse(self.backgroundcolor)
         elif self.background == '1':
             self.image_control.setImage(Addon.getSetting('file'))
+            self.image_control2.setImage(Addon.getSetting('file'))
         elif self.background == '2':
             self.folder = Addon.getSetting('folder')
             self.imagetimer = int(self.timer[int(Addon.getSetting('imagetimer'))])
@@ -171,6 +182,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.nextfile > self.number:
                 self.nextfile = 0
             self.image_control.setImage(self.path)
+            self.image_control2.setImage(self.path)
         else:
             self.imagetimer = int(self.timer[int(Addon.getSetting('imagetimer'))])
             xbmc.executebuiltin('Skin.SetString(SkinHelper.RandomFanartDelay,%s)' %self.imagetimer)
@@ -183,6 +195,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             else:
                 self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]"	
             self.image_control.setImage(xbmc.getInfoLabel(self.skinhelperimage))
+            self.image_control2.setImage(xbmc.getInfoLabel(self.skinhelperimage))
 
 		#setting up shadow color
         self.shadow_colorcontrol.setLabel(self.shadowcolor)
@@ -379,6 +392,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                         self.nextfile = random.randint(0,self.number)
                     self.path = self.folder + self.files[self.nextfile]
                     self.image_control.setImage(self.path)
+                    self.image_control2.setImage(self.path)
                     self.nextfile +=1
                     self.slideshowcounter = 0
                     if self.nextfile > self.number:
@@ -389,6 +403,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.slideshowcounter +=1
                 if self.slideshowcounter >= (self.multiplier*self.imagetimer):
                     self.image_control.setImage(xbmc.getInfoLabel(self.skinhelperimage))
+                    self.image_control2.setImage(xbmc.getInfoLabel(self.skinhelperimage))
                     self.slideshowcounter = 0
 
 			#colon blink
@@ -487,7 +502,6 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.information = self.informationlist[self.switch]
                 if self.switch == len(self.informationlist)-1:
                     self.switch = -1
-
         if self.weathericonf != '0' and self.albumartshow == 'true' and xbmc.getInfoLabel('Player.art(thumb)'):
             self.iconswitchcounter += 1
             if self.iconswitchcounter == (self.multiplier*self.infoswitch):

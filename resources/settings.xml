@@ -62,6 +62,7 @@
 	</category>
 	<category label="32020">
 		<setting label="32500" type="action" action="RunScript(script.skin.helper.colorpicker,skinstring=screensaver.digitalclock.shadowcolor)"/>
+		<setting id="aspectratio" type="enum" label="32505" default="0" lvalues="32506|32507"/>
 		<setting id="backgroundchoice" type="enum" label="32510" default="0" lvalues="32511|32512|32513|32514"/>
 		<setting label="32520" type="action" visible="eq(-1,0)" action="RunScript(script.skin.helper.colorpicker,skinstring=screensaver.digitalclock.backgroundcolor)"/>
 		<setting label="32531" type="lsep" visible="eq(-2,1)"/>
