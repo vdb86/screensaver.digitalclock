@@ -1,3 +1,6 @@
+[B]5.0.0[/B]
+- Updated the screensaver to follow Krypton updates
+
 [B]4.0.3[/B]
 - Better representation of CPU usage on multiple core systems
 
