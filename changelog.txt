@@ -1,3 +1,6 @@
+[B]5.0.1[/B]
+- Fixed the weather icon not updating bug
+
 [B]5.0.0[/B]
 - Updated the screensaver to follow Krypton updates
 

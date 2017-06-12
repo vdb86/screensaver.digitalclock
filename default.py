@@ -519,6 +519,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
             else:
                 self.icon = xbmc.getInfoLabel('Player.art(thumb)')
+        elif self.weathericonf != '0':
+            self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
 
     def exit(self):
         self.abort_requested = True
