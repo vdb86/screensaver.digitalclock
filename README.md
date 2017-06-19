@@ -85,36 +85,23 @@ If there is no appropriate xml file it will use skin.default.xml
 
 If the skin is not on the list screensaver will use default font names from confluence (It might not look pretty but it will work with any skin):
 
+- Adonic
 - Aeon Nox 5
 - Aeon MQ5
 - Aeon MQ6
 - Amber
 - AppTV
-- Arctic: Zephyr (Works but it still doesn't have the proper font - contacted the developer)
-- Avalon
-- Back Row
-- Bello
 - Black Glass Nova
 - Box
 - Chroma
-- Cirrus Extended
 - Confluence
-- Conq
-- Eminence (Works but it still doesn't have the proper font - contacted the developer)
-- Eunique
-- KOver
-- Maximinimalism (Works, we're just waiting for the skin update)
 - Metropolis
 - Mimic
 - Nebula
-- Neon
 - OSMC
 - Rapier
-- Refocus (Works but it still doesn't have the proper font - contacted the developer)
 - Retouched
 - Revolve
-- Sio2 (Works, we're just waiting for the skin update)
-- Titan (Has additional options!)
 - Transparency
 - Xperience1080
 
