@@ -91,18 +91,29 @@ If the skin is not on the list screensaver will use default font names from conf
 - Aeon MQ6
 - Amber
 - AppTV
+- Arctic: Zephyr
+- Bello 6
 - Black Glass Nova
 - Box
 - Chroma
 - Confluence
+- Eminence.2
+- Estouchy
+- Estuary
+- (Fuse)neue
 - Metropolis
 - Mimic
 - Nebula
+- Omni
 - OSMC
+- Pellucid
+- Phenomenal
 - Rapier
 - Retouched
 - Revolve
+- Titan (Default testing skin!)
 - Transparency
+- Unity
 - Xperience1080
 
 If your skin is not on the list, and you would like it to be - send me a message.
