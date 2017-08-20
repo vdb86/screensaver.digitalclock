@@ -40,6 +40,7 @@
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=237338</forum>
 		<source>https://github.com/vdb86/screensaver.digitalclock</source>
+		<news>5.0.3 (2017-08-20) - Added support for Aeon Nox 5: SiLVO skin
 5.0.2 (2017-06-19) - Added support for Adonic and (Fuse)neue skins
 5.0.1 (2017-06-12) - Fixed the weather icon not updating bug
 5.0.0 (2017-02-26) - Updated the screensaver to follow Krypton updates</news>
