@@ -189,11 +189,11 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.skinhelper == 0:
                 self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]"
             elif self.skinhelper == 1:
-                self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]"	
+                self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]"
             elif self.skinhelper == 2:
                 self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]"
             else:
-                self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]"	
+                self.skinhelperimage = "$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]"
             self.image_control.setImage(xbmc.getInfoLabel(self.skinhelperimage))
             self.image_control2.setImage(xbmc.getInfoLabel(self.skinhelperimage))
 
@@ -204,7 +204,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.informationlist = []
         if self.informationshow == 'true':
             if self.nowplayinginfoshow == 'true':
-                if xbmc.getInfoLabel('MusicPlayer.Artist') and xbmc.getInfoLabel('MusicPlayer.Title'):
+                if xbmc.getInfoLabel('MusicPlayer.Artist') or xbmc.getInfoLabel('MusicPlayer.Title'):
                     self.informationlist.append('$INFO[MusicPlayer.Artist]')
                     self.informationlist.append('$INFO[MusicPlayer.Title]')
                 if xbmc.getInfoLabel('VideoPlayer.TVShowTitle'):
@@ -221,7 +221,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.informationlist.append("$ADDON[screensaver.digitalclock 32280] $INFO[System.CoreUsage(0)]% $INFO[System.CoreUsage(1)]% $INFO[System.CoreUsage(2)]% $INFO[System.CoreUsage(3)]%")
                 if self.corenumber == 8:
                     self.informationlist.append("$ADDON[screensaver.digitalclock 32280] $INFO[System.CoreUsage(0)]% $INFO[System.CoreUsage(1)]% $INFO[System.CoreUsage(2)]% $INFO[System.CoreUsage(3)]%")
-                    self.informationlist.append("$ADDON[screensaver.digitalclock 32280] $INFO[System.CoreUsage(4)]% $INFO[System.CoreUsage(5)]% $INFO[System.CoreUsage(6)]% $INFO[System.CoreUsage(7)]%")					
+                    self.informationlist.append("$ADDON[screensaver.digitalclock 32280] $INFO[System.CoreUsage(4)]% $INFO[System.CoreUsage(5)]% $INFO[System.CoreUsage(6)]% $INFO[System.CoreUsage(7)]%")
             if self.batterylevel == 'true' and xbmc.getInfoLabel('System.BatteryLevel'):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32281] $INFO[System.BatteryLevel]")
             if self.freememory == 'true' and xbmc.getInfoLabel('System.FreeMemory'):
@@ -379,7 +379,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 new_y = self.currentposition[1] + self.dy
                 if new_x >= self.screenxe or new_x <= self.screenxs:
                     self.dx = self.dx*-1
-                    new_x = self.currentposition[0] + self.dx		
+                    new_x = self.currentposition[0] + self.dx
                     self.setCTR()
                 if new_y >= self.screenye or new_y <= self.screenys:
                     self.dy = self.dy*-1
@@ -413,7 +413,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.slideshowcounter = 0
 
 			#colon blink
-            if self.colonblink == 'true':	
+            if self.colonblink == 'true':
                 if datetime.now().second%2==0:
                     self.colon_control.setVisible(True)
                 else:
