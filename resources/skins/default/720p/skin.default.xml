@@ -120,6 +120,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
+				<scroll>true</scroll>
 				<label></label>
 				<font>font13_title</font>
 			</control>	
@@ -134,6 +135,7 @@ Most probably it won't look pretty but now screensaver.digitalclock will work wi
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
+				<scroll>true</scroll>
 				<label></label>
 				<font>font13_title</font>
 			</control>				

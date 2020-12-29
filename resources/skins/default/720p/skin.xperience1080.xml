@@ -115,6 +115,7 @@
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
+				<scroll>true</scroll>
 				<label></label>
 				<font>font24_title</font>
 			</control>		
@@ -129,6 +130,7 @@
 				<colordiffuse>00000000</colordiffuse>
 				<align>center</align>
 				<aligny>center</aligny>
+				<scroll>true</scroll>
 				<label></label>
 				<font>font24_title</font>
 			</control>				
