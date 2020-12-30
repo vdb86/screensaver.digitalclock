@@ -84,6 +84,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.ampm_control.setVisible(False)
         self.informationshow = Addon.getSetting('additionalinformation')
         self.nowplayinginfoshow = Addon.getSetting('nowplayinginfoshow')
+        self.combinesonginfo = Addon.getSetting('combinesonginfo')
         self.showonlynowplaying = Addon.getSetting('showonlynowplaying')
         self.cpuusage = Addon.getSetting('cpuusage')
         self.batterylevel = Addon.getSetting('batterylevel')
@@ -216,12 +217,17 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         if self.informationshow == 'true':
             if self.nowplayinginfoshow == 'true':
                 if xbmc.getInfoLabel('MusicPlayer.Artist') or xbmc.getInfoLabel('MusicPlayer.Title'):
-                    self.informationlist.append('$INFO[MusicPlayer.Artist]')
-                    self.informationlist.append('$INFO[MusicPlayer.Title]')
+                    if self.combinesonginfo == 'true':
+                        self.informationlist.append('$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]')
+                    else:
+                        self.informationlist.append('$INFO[MusicPlayer.Artist]')
+                        self.informationlist.append('$INFO[MusicPlayer.Title]')
                 if xbmc.getInfoLabel('VideoPlayer.TVShowTitle'):
                     self.informationlist.append('$INFO[VideoPlayer.TVShowTitle]')
                 if xbmc.getInfoLabel('VideoPlayer.Title'):
                     self.informationlist.append('$INFO[VideoPlayer.Title]')
+            if self.weatherinfoshow == 'true' and xbmc.getInfoLabel('Weather.Location'):
+                self.informationlist.append("$INFO[Weather.Temperature] - $INFO[Weather.Conditions]")
             if self.cpuusage == 'true' and xbmc.getInfoLabel('System.CpuUsage'):
                 self.corenumber = xbmc.getInfoLabel('System.CpuUsage').count('%')
                 if self.corenumber == 1:
@@ -264,14 +270,12 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32292] $INFO[Window(Home).Property(Music.ArtistsCount)]")
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32293] $INFO[Window(Home).Property(Music.AlbumsCount)]")
                 self.informationlist.append("$ADDON[screensaver.digitalclock 32294] $INFO[Window(Home).Property(Music.SongsCount)]")
-            if self.weatherinfoshow == 'true' and xbmc.getInfoLabel('Weather.Location'):
-                self.informationlist.append("$INFO[Weather.Temperature] - $INFO[Weather.Conditions]")
             if len(self.informationlist) != 0:
                 self.information = self.informationlist[0]
 
 		#setting up the date format and positions
         self.dateformat = ['Hide date','$INFO[System.Date(DDD dd. MMM yyyy)]','$INFO[System.Date(dd.mm.yyyy)]','$INFO[System.Date(mm.dd.yyyy)]']
-        if self.datef == '0':
+        if self.datef == '0' and not(self.combinesonginfo == 'false' and self.showonlynowplaying == 'true' and self.nowplayinginfoshow == 'true' and xbmc.getInfoLabel('MusicPlayer.Artist')):
             self.date_control.setVisible(False)
             if self.informationshow == 'true':
                 if len(self.informationlist) != 0:
@@ -323,9 +327,9 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.weathericonset = ['Hide weather icon','set1','set2','set3','set4']
 
 		#setting the icon image
-        if self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and xbmc.getInfoLabel('MusicPlayer.Artist'):
+        if self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and (xbmc.getInfoLabel('MusicPlayer.Artist') or xbmc.getInfoLabel('MusicPlayer.Title')):
             self.icon = xbmc.getInfoLabel('Player.art(thumb)')
-        if self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location'):
+        elif self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location'):
             self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
         else:
             self.icon_control.setImage(os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png")
@@ -506,7 +510,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.colon_control.setLabel(" : ")
         self.minute_control.setLabel(datetime.now().strftime("%M"))
         self.ampm_control.setLabel(datetime.now().strftime("%p"))
-        if self.showonlynowplaying == 'true' and self.nowplayinginfoshow == 'true' and xbmc.getInfoLabel('MusicPlayer.Artist'):
+        if self.combinesonginfo == 'false' and self.showonlynowplaying == 'true' and self.nowplayinginfoshow == 'true' and xbmc.getInfoLabel('MusicPlayer.Artist'):
             self.date_control.setLabel(xbmc.getInfoLabel('MusicPlayer.Artist'))
         else:
             self.date_control.setLabel(self.date)
@@ -524,7 +528,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.shadow_colorcontrol.setLabel(self.shadowcolor)
 
     def Switch(self):
-        if self.showonlynowplaying == 'true' and self.nowplayinginfoshow == 'true' and xbmc.getInfoLabel('MusicPlayer.Title'):
+        if self.combinesonginfo == 'false' and self.showonlynowplaying == 'true' and self.nowplayinginfoshow == 'true' and xbmc.getInfoLabel('MusicPlayer.Title'):
             self.information = xbmc.getInfoLabel('MusicPlayer.Title')
         elif len(self.informationlist) > 1:
             self.switchcounter += 1
@@ -534,7 +538,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 self.information = self.informationlist[self.switch]
                 if self.switch == len(self.informationlist)-1:
                     self.switch = -1
-        if self.showonlynowplaying == 'true':
+        if self.combinesonginfo == 'false' and self.showonlynowplaying == 'true':
             if self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and xbmc.getInfoLabel('Player.art(thumb)'):
                 self.icon = xbmc.getInfoLabel('Player.art(thumb)')
             elif self.weatherinfoshow == 'true' and self.weathericonf != '0':
@@ -547,13 +551,13 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                 if self.iconswitch == 2:
                     self.iconswitch = 0
             if self.iconswitch == 0:
-                self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
-            else:
                 self.icon = xbmc.getInfoLabel('Player.art(thumb)')
-        elif self.weatherinfoshow == 'true' and self.weathericonf != '0':
-            self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
+            else:
+                self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
         elif self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and xbmc.getInfoLabel('Player.art(thumb)'):
             self.icon = xbmc.getInfoLabel('Player.art(thumb)')
+        elif self.weatherinfoshow == 'true' and self.weathericonf != '0':
+            self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
 
     def exit(self):
         self.abort_requested = True

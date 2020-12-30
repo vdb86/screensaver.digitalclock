@@ -220,7 +220,11 @@ msgctxt "#32222"
 msgid "This will hide all other info while the music is playing!"
 msgstr ""
 
-#empty strings from id 32223 to 32229
+msgctxt "#32223"
+msgid "Merge song artist and title"
+msgstr ""
+
+#empty strings from id 32224 to 32229
 
 msgctxt "#32230"
 msgid "Enable weather information"

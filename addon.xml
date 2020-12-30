@@ -38,8 +38,7 @@
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=237338</forum>
 		<source>https://github.com/vdb86/screensaver.digitalclock</source>
-		<news>6.0.0 (2020-12-28) - Updated the screensaver to work with Kodi 19, fixed settings quite a bit, added: no padding option for hours, dim option for the background, show only music information option 
-5.0.4 (2017-10-28) - Added support for skins Ftv, Grid, Horizon and Reestuarized</news>
+		<news>6.0.0 (2020-12-30) - Updated the screensaver to work with Kodi 19, fixed settings quite a bit, added options: no padding for hours, dim for the background, combine song artist and title, show only music information and RSS</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.png</fanart>
