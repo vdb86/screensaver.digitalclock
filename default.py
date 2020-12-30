@@ -60,6 +60,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.image_control = self.getControl(30020)
         self.image_control2 = self.getControl(30022)
         self.icon_control = self.getControl(30021)
+        self.rss_control = self.getControl(30023)
         self.hour_colorcontrol = self.getControl(30105)
         self.colon_colorcontrol = self.getControl(30106)
         self.minute_colorcontrol = self.getControl(30107)
@@ -132,6 +133,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.logout = Addon.getSetting('logout')
         self.logoutplaying = Addon.getSetting('logoutplaying')
         self.logouttime = int(Addon.getSetting('logouttime'))
+        self.rss = Addon.getSetting('rss')
         self.monitor = xbmc.Monitor()
 
 		#setting up colors if they haven't been set up in settings
@@ -170,10 +172,10 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.image_control2.setImage(os.path.join(path,"resources/media/white.png"))
             self.image_control2.setColorDiffuse(self.backgroundcolor)
         elif self.background == '4':
-             self.image_control.setImage(os.path.join(path,"resources/media/white.png"))
-             self.image_control.setColorDiffuse(self.dim[self.dimlevel])
-             self.image_control2.setImage(os.path.join(path,"resources/media/white.png"))
-             self.image_control2.setColorDiffuse(self.dim[self.dimlevel])
+            self.image_control.setImage(os.path.join(path,"resources/media/white.png"))
+            self.image_control.setColorDiffuse(self.dim[self.dimlevel])
+            self.image_control2.setImage(os.path.join(path,"resources/media/white.png"))
+            self.image_control2.setColorDiffuse(self.dim[self.dimlevel])
         elif self.background == '1':
             self.image_control.setImage(Addon.getSetting('file'))
             self.image_control2.setImage(Addon.getSetting('file'))
@@ -351,14 +353,24 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.waittimer = 0.5
             self.multiplier = 2
 
+		#setting up RSS
+        if self.rss == 'false':
+            self.rss_control.setVisible(False)
+
 		#setting up the screen size
         self.height = self.container.getHeight()
         self.width = self.container.getWidth()
-        self.screenye = int(720 + 120 * (self.zoom / 100 - 1) - self.height * self.zoom / 100)
-        self.screenys = int(280 * (self.zoom / 100 - 1) - 18 * (self.zoom / 100 - 1))
-        self.screenxe = int(1280 - self.width * self.zoom / 100)
-        self.screenxs = int(360 * (self.zoom / 100 - 1))
-
+        if self.rss == 'false':
+            self.screenye = int(720 + 120 * (self.zoom / 100 - 1) - self.height * self.zoom / 100)
+            self.screenys = int(280 * (self.zoom / 100 - 1) - 18 * (self.zoom / 100 - 1))
+            self.screenxe = int(1280 - self.width * self.zoom / 100)
+            self.screenxs = int(360 * (self.zoom / 100 - 1))
+        else:
+            self.screenye = int(680 + 120 * (self.zoom / 100 - 1) - self.height * self.zoom / 100)
+            self.screenys = int(280 * (self.zoom / 100 - 1) - 18 * (self.zoom / 100 - 1))
+            self.screenxe = int(1280 - self.width * self.zoom / 100)
+            self.screenxs = int(360 * (self.zoom / 100 - 1))		
+		
 		#combining transparency and color
         self.setCTR()
         self.Display()

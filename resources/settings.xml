@@ -24,20 +24,20 @@
 		<setting id="showonlynowplaying" label="32221" type="bool" subsetting="true" visible="eq(-1,true) + eq(-3,true)" default="false"/>
 		<setting label="32222" type="text" enable="false" subsetting="true" visible="eq(-1,true) + eq(-2,true) + eq(-4,true)"/>
 		<setting id="albumartshow" label="32250" type="bool" subsetting="true" visible="eq(-5,true)" default="false"/>
-		<setting id="cpuusage" label="32260" type="bool" visible="eq(-6,true)" default="false"/>
-		<setting id="batterylevel" label="32261" type="bool" visible="eq(-7,true)" default="false"/>
-		<setting id="freememory" label="32262" type="bool" visible="eq(-8,true)" default="false"/>
-		<setting id="cputemp" label="32266" type="bool" visible="eq(-9,true)" default="false"/>
-		<setting id="gputemp" label="32267" type="bool" visible="eq(-10,true)" default="false"/>
-		<setting id="hddtemp" label="32268" type="bool" visible="eq(-11,true)" default="false"/>
-		<setting id="fps" label="32269" type="bool" visible="eq(-12,true)" default="false"/>
-		<setting id="cuptime" label="32270" type="bool" visible="eq(-13,true)" default="false"/>
-		<setting id="tuptime" label="32271" type="bool" visible="eq(-14,true)" default="false"/>
-		<setting id="movies" label="32263" type="bool" visible="eq(-15,true)" default="false"/>
-		<setting id="tvshows" label="32264" type="bool" visible="eq(-16,true)" default="false"/>
-		<setting id="music" label="32265" type="bool" visible="eq(-17,true)" default="false"/>
-		<setting id="weatherinfoshow" label="32230" type="bool" visible="eq(-18,true)" default="false"/>
-		<setting id="weathericonformat" type="select" label="32240" subsetting="true" visible="eq(-19,true) + eq(-1,true)" default="1" lvalues="32241|32242|32243|32244|32245"/>
+		<setting id="weatherinfoshow" label="32230" type="bool" visible="eq(-6,true)" default="false"/>
+		<setting id="weathericonformat" type="select" label="32240" subsetting="true" visible="eq(-7,true) + eq(-1,true)" default="1" lvalues="32241|32242|32243|32244|32245"/>
+		<setting id="cpuusage" label="32260" type="bool" visible="eq(-8,true)" default="false"/>
+		<setting id="batterylevel" label="32261" type="bool" visible="eq(-9,true)" default="false"/>
+		<setting id="freememory" label="32262" type="bool" visible="eq(-10,true)" default="false"/>
+		<setting id="cputemp" label="32266" type="bool" visible="eq(-11,true)" default="false"/>
+		<setting id="gputemp" label="32267" type="bool" visible="eq(-12,true)" default="false"/>
+		<setting id="hddtemp" label="32268" type="bool" visible="eq(-13,true)" default="false"/>
+		<setting id="fps" label="32269" type="bool" visible="eq(-14,true)" default="false"/>
+		<setting id="cuptime" label="32270" type="bool" visible="eq(-15,true)" default="false"/>
+		<setting id="tuptime" label="32271" type="bool" visible="eq(-16,true)" default="false"/>
+		<setting id="movies" label="32263" type="bool" visible="eq(-17,true)" default="false"/>
+		<setting id="tvshows" label="32264" type="bool" visible="eq(-18,true)" default="false"/>
+		<setting id="music" label="32265" type="bool" visible="eq(-19,true)" default="false"/>
 	</category>
     <category id="colorandopacity" label="32010">
 		<setting label="32310" type="action" action="RunScript(script.skin.helper.colorpicker,skinstring=screensaver.digitalclock.hourcolor)"/>
@@ -81,5 +81,7 @@
 		<setting id="logout" label="32610" type="bool" default="false"/>
 		<setting id="logoutplaying" label="32611" type="bool" subsetting="true" visible="eq(-1,true)" default="false"/>
 		<setting id="logouttime" label="32612" type="number" subsetting="true" visible="eq(-2,true)" default="10" option="int"/>
+		<setting id="rss" label="32620" type="bool" default="false"/>
+		<setting label="32621" type="text" enable="false" subsetting="true" visible="eq(-1,true)"/>
 	</category>
 </settings>
