@@ -6,7 +6,7 @@ Digital clock screensaver with a lot of options.
 These are the options:
 
 __Movement__
--- Movement on the screen (Random position, Bounce movement, Fixed in the center, Custom position)
+- Movement on the screen (Random position, Bounce movement, Fixed in the center, Custom position)
 - Bounce movement speed
 - Number of seconds to stay in place (Number of seconds that the clock will stay in place before moving to a random location)
 
