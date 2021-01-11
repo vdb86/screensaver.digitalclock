@@ -19,7 +19,6 @@
 import xbmcaddon
 import xbmcgui
 import xbmc
-import xbmcvfs
 import random
 import os
 from datetime import datetime
@@ -374,7 +373,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.screenys = int(280 * (self.zoom / 100 - 1) - 18 * (self.zoom / 100 - 1))
             self.screenxe = int(1280 - self.width * self.zoom / 100)
             self.screenxs = int(360 * (self.zoom / 100 - 1))		
-		
+
 		#combining transparency and color
         self.setCTR()
         self.Display()
@@ -461,7 +460,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                         xbmc.executebuiltin("System.LogOff")
                         xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)
                         self.logoutcounter = 0
-          
+
             self.monitor.waitForAbort(self.waittimer)
 
     def setCTR(self):
@@ -567,15 +566,15 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 
 if __name__ == '__main__':
     xbmc.log('Digital Clock Screensaver %s: Started' %Addonversion)
-    if(os.path.isfile(xbmcvfs.translatePath('special://skin/1080i/script-screensaver-digitalclock-custom.xml'))):
+    if(os.path.isfile(xbmc.translatePath('special://skin/1080i/script-screensaver-digitalclock-custom.xml'))):
         screensaver = Screensaver('script-screensaver-digitalclock-custom.xml', xbmc.translatePath('special://skin/1080i/'), 'default')
-    elif(os.path.isfile(xbmcvfs.translatePath('special://skin/720p/script-screensaver-digitalclock-custom.xml'))):
+    elif(os.path.isfile(xbmc.translatePath('special://skin/720p/script-screensaver-digitalclock-custom.xml'))):
         screensaver = Screensaver('script-screensaver-digitalclock-custom.xml', xbmc.translatePath('special://skin/720p/'), 'default')
-    elif(os.path.isfile(xbmcvfs.translatePath('special://skin/21x9/script-screensaver-digitalclock-custom.xml'))):
+    elif(os.path.isfile(xbmc.translatePath('special://skin/21x9/script-screensaver-digitalclock-custom.xml'))):
         screensaver = Screensaver('script-screensaver-digitalclock-custom.xml', xbmc.translatePath('special://skin/21x9/'), 'default')
-    elif(os.path.isfile(xbmcvfs.translatePath('special://skin/16x9/script-screensaver-digitalclock-custom.xml'))):
+    elif(os.path.isfile(xbmc.translatePath('special://skin/16x9/script-screensaver-digitalclock-custom.xml'))):
         screensaver = Screensaver('script-screensaver-digitalclock-custom.xml', xbmc.translatePath('special://skin/16x9/'), 'default')
-    elif(os.path.isfile(xbmcvfs.translatePath('special://skin/4x3Hirez/script-screensaver-digitalclock-custom.xml'))):
+    elif(os.path.isfile(xbmc.translatePath('special://skin/4x3Hirez/script-screensaver-digitalclock-custom.xml'))):
         screensaver = Screensaver('script-screensaver-digitalclock-custom.xml', xbmc.translatePath('special://skin/4x3Hirez/'), 'default')
     elif(os.path.isfile(os.path.join(path,"resources/skins/default/720p/",scriptname))):
         screensaver = Screensaver(scriptname, path, 'default')
