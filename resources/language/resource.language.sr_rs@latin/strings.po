@@ -17,6 +17,18 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.7.2\n"
 
+msgctxt "Addon Summary"
+msgid "Digital clock screensaver"
+msgstr "Čuvar ekrana digitalni sat"
+
+msgctxt "Addon Description"
+msgid "Digital clock screensaver with date, now playing information, weather information, image slideshow and several options."
+msgstr "Čuvar ekrana digitalni sat sa datumom, podacima o trenutnoj reprodukciji, podacima o vremenskoj prognozi, reprodukcijom slajdova slika i nekoliko opcija."
+
+msgctxt "Addon Disclaimer"
+msgid "For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum."
+msgstr "Za probleme, zahteve ili opšta pitanja posetite Digital clock screensaver temu na Kodi forumu."
+
 # settings labels
 msgctxt "#32000"
 msgid "Movement"

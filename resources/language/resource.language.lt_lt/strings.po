@@ -16,6 +16,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "Addon Summary"
+msgid "Digital clock screensaver"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Digital clock screensaver with date, now playing information, weather information, image slideshow and several options."
+msgstr "Skaitmeninio laikrodžio ekrano užsklanda su data, šiuo metu atkuriamo įrašo bei orų informacija, skaidrių demonstracija ar keletu kitų parinkčių"
+
+msgctxt "Addon Disclaimer"
+msgid "For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum."
+msgstr "Norėdami pranešti apie klaidą, pateikti prašymą ar tiesiog paklausti, aplankykite skaitmeninio laikrodžio ekrano užsklandos temą Kodi forume."
+
 # settings labels
 msgctxt "#32000"
 msgid "Movement"
