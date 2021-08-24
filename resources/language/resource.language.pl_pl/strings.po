@@ -16,6 +16,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "Addon Summary"
+msgid "Digital clock screensaver"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid "Digital clock screensaver with date, now playing information, weather information, image slideshow and several options."
+msgstr "Wygaszacz ekranu wyświetlający cyfrowy zegar z datą, informacjami o aktualnie odtwarzanych mediach, o pogodzie, pokaz slajdów i kilkoma innymi opcjami."
+
+msgctxt "Addon Disclaimer"
+msgid "For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum."
+msgstr "Odwiedź dedykowany wygaszaczowi wątek na forum Kodi, aby zgłosić błędy, prośbę o funkcje albo zadać ogólne pytanie."
+
 # settings labels
 msgctxt "#32000"
 msgid "Movement"
