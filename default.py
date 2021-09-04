@@ -183,8 +183,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         elif self.background == '2':
             self.folder = Addon.getSetting('folder')
             self.imagetimer = int(self.timer[int(Addon.getSetting('imagetimer'))])
-            self.number = len(os.walk(self.folder).next()[2])-1
-            self.files = os.walk(self.folder).next()[2]
+            self.files = os.walk(self.folder).__next__()[2]
+            self.number = len(self.files)-1
             self.files.sort()
             self.nextfile = 0
             if self.randomimages =='true':
