@@ -26,9 +26,11 @@
 			<screenshot>resources/screenshot-2.png</screenshot>
 			<screenshot>resources/screenshot-3.png</screenshot>
 		</assets>
+		<summary lang="de_DE">Digitaluhr-Bildschirmschoner</summary>
 		<summary lang="en_GB">Digital clock screensaver</summary>
 		<summary lang="pl_PL">Wygaszacz ekranu jako zegar cyfrowy</summary>
 		<summary lang="sr_RS@latin">Čuvar ekrana digitalni sat</summary>
+		<description lang="de_DE">Bildschirmschoner mit Digitaluhr, Datum, Information über die aktuelle Wiedergabe, Wetter, Diashow und weitere Optionen.</description>
 		<description lang="en_GB">Digital clock screensaver with date, now playing information, weather information, image slideshow and several options.</description>
 		<description lang="en_NZ">Digital clock screensaver with date, now playing information, weather information, image slideshow and several options.</description>
 		<description lang="es_ES">Salvapantallas reloj digital con fecha, información de la reproducción actual, información meteorológica, imágenes y más opciones</description>
