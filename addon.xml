@@ -30,6 +30,7 @@
 		<summary lang="en_GB">Digital clock screensaver</summary>
 		<summary lang="pl_PL">Wygaszacz ekranu jako zegar cyfrowy</summary>
 		<summary lang="sr_RS@latin">Čuvar ekrana digitalni sat</summary>
+		<summary lang="zh_CN">数字时钟屏幕保护程序</summary>
 		<description lang="de_DE">Bildschirmschoner mit Digitaluhr, Datum, Information über die aktuelle Wiedergabe, Wetter, Diashow und weitere Optionen.</description>
 		<description lang="en_GB">Digital clock screensaver with date, now playing information, weather information, image slideshow and several options.</description>
 		<description lang="en_NZ">Digital clock screensaver with date, now playing information, weather information, image slideshow and several options.</description>
@@ -43,6 +44,7 @@
 		<description lang="sr_RS">Чувар екрана дигитални сат са датумом, подацима о тренутној репродукцији, подацима о временској прогнози, репродукцијом слајдова слика и неколико опција.</description>
 		<description lang="sr_RS@latin">Čuvar ekrana digitalni sat sa datumom, podacima o trenutnoj reprodukciji, podacima o vremenskoj prognozi, reprodukcijom slajdova slika i nekoliko opcija.</description>
 		<description lang="tr_TR">Dijital saat ekran koruyucu, tarih ve saatin yanı sıra şimdi oynatılıyor bilgisi, hava durumu bilgisi, resim slayt gösterisi gibi çeşitli seçenekler sunar.</description>
+		<description lang="zh_CN">数字时钟屏幕保护程序，带有日期、当前播放信息、天气信息、图片幻灯片和多个选项。</description>
 		<disclaimer lang="en_GB">For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum.</disclaimer>
 		<disclaimer lang="en_NZ">For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum.</disclaimer>
 		<disclaimer lang="es_ES">Para errores, peticiones o cuestiones generales visite el hilo Salvapantallas reloj digital en el foro de Kodi</disclaimer>
@@ -55,5 +57,6 @@
 		<disclaimer lang="sr_RS">За проблеме, захтеве или општа питања посетите Digital clock screensaver тему на Kodi форуму.</disclaimer>
 		<disclaimer lang="sr_RS@latin">Za probleme, zahteve ili opšta pitanja posetite Digital clock screensaver temu na Kodi forumu.</disclaimer>
 		<disclaimer lang="tr_TR">Hata bildirme, istek ve genel sorularınız için Kodi forumunda dijital saat ekran koruyucu başlığını ziyaret edebilirsiniz.</disclaimer>
+		<disclaimer lang="zh_CN">有关 bug、请求或一般问题，请访问 Kodi 论坛上的数字时钟屏幕保护程序讨论贴。</disclaimer>
 	</extension>
 </addon>
