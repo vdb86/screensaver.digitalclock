@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-12-04 09:13+0000\n"
+"PO-Revision-Date: 2022-02-01 15:13+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-look-and-feel/screensaver-digitalclock/da_dk/>\n"
 "Language: da_dk\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgctxt "Addon Summary"
 msgid "Digital clock screensaver"
@@ -32,40 +32,40 @@ msgstr "Ved fejl, anmodninger eller generelle spørgsmål, besøg tråden Pauses
 # settings labels
 msgctxt "#32000"
 msgid "Movement"
-msgstr ""
+msgstr "Bevægelse"
 
 msgctxt "#32001"
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 # empty strings from id 32002 to 32004
 msgctxt "#32005"
 msgid "Additional Information"
-msgstr ""
+msgstr "Yderligere information"
 
 # empty strings from id 32006 to 32009
 msgctxt "#32010"
 msgid "Color | Opacity"
-msgstr ""
+msgstr "Farve | Gennemsigtighed"
 
 # empty strings from id 32011 to 32019
 msgctxt "#32020"
 msgid "Background"
-msgstr ""
+msgstr "Baggrund"
 
 # empty strings from id 32021 to 32024
 msgctxt "#32025"
 msgid "Extra Options"
-msgstr ""
+msgstr "Ekstra indstillinger"
 
 # empty strings from id 32026 to 32099
 msgctxt "#32100"
 msgid "Movement on the screen"
-msgstr ""
+msgstr "Bevægelse på skærmen"
 
 msgctxt "#32101"
 msgid "Random position"
-msgstr ""
+msgstr "Tilfældig position"
 
 msgctxt "#32102"
 msgid "Bounce"
@@ -73,28 +73,28 @@ msgstr ""
 
 msgctxt "#32103"
 msgid "Fixed in the center"
-msgstr ""
+msgstr "Fast på midten"
 
 msgctxt "#32104"
 msgid "Custom fixed position"
-msgstr ""
+msgstr "Brugerdefineret fast position"
 
 # empty strings from id 32105 to 32109
 msgctxt "#32110"
 msgid "Movement speed"
-msgstr ""
+msgstr "Bevægelseshastighed"
 
 msgctxt "#32111"
 msgid "Slow"
-msgstr ""
+msgstr "Langsom"
 
 msgctxt "#32112"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 msgctxt "#32113"
 msgid "Fast"
-msgstr ""
+msgstr "Hurtig"
 
 # empty strings from id 32114 to 32119
 msgctxt "#32120"
