@@ -30,6 +30,7 @@
 		<summary lang="de_DE">Digitaluhr-Bildschirmschoner</summary>
 		<summary lang="en_GB">Digital clock screensaver</summary>
 		<summary lang="pl_PL">Wygaszacz ekranu jako zegar cyfrowy</summary>
+		<summary lang="ru_RU">Застава &quot;Цифровые часы&quot;</summary>
 		<summary lang="sr_RS@latin">Čuvar ekrana digitalni sat</summary>
 		<summary lang="zh_CN">数字时钟屏幕保护程序</summary>
 		<description lang="da_DK">Pauseskærm med digitalt ur og dato, afspilningsinformation, vejrinformation, billeddiasshow og flere indstillinger.</description>
@@ -43,6 +44,7 @@
 		<description lang="lt_LT">Skaitmeninio laikrodžio ekrano užsklanda su data, šiuo metu atkuriamo įrašo bei orų informacija, skaidrių demonstracija ar keletu kitų parinkčių</description>
 		<description lang="ms_MY">Penyelamat skrin jam digital dengan tarikh, maklumat kini dimainkan, maklumat cuaca, paparan slaid imej dan beberapa pilihan lain.</description>
 		<description lang="pl_PL">Wygaszacz ekranu wyświetlający cyfrowy zegar z datą, informacjami o aktualnie odtwarzanych mediach, o pogodzie, pokaz slajdów i kilkoma innymi opcjami.</description>
+		<description lang="ru_RU">Заставка цифровых часов, с датой, с информацией о погоде, со слайд-шоу и с несколькими опциями.</description>
 		<description lang="sr_RS">Чувар екрана дигитални сат са датумом, подацима о тренутној репродукцији, подацима о временској прогнози, репродукцијом слајдова слика и неколико опција.</description>
 		<description lang="sr_RS@latin">Čuvar ekrana digitalni sat sa datumom, podacima o trenutnoj reprodukciji, podacima o vremenskoj prognozi, reprodukcijom slajdova slika i nekoliko opcija.</description>
 		<description lang="tr_TR">Dijital saat ekran koruyucu, tarih ve saatin yanı sıra şimdi oynatılıyor bilgisi, hava durumu bilgisi, resim slayt gösterisi gibi çeşitli seçenekler sunar.</description>
@@ -57,6 +59,7 @@
 		<disclaimer lang="lt_LT">Norėdami pranešti apie klaidą, pateikti prašymą ar tiesiog paklausti, aplankykite skaitmeninio laikrodžio ekrano užsklandos temą Kodi forume.</disclaimer>
 		<disclaimer lang="ms_MY">Jika ada pepijat, permintaan atau persoalan umum sila lawati bebenang Digital clock screensaver di dalam forum Kodi.</disclaimer>
 		<disclaimer lang="pl_PL">Odwiedź dedykowany wygaszaczowi wątek na forum Kodi, aby zgłosić błędy, prośbę o funkcje albo zadać ogólne pytanie.</disclaimer>
+		<disclaimer lang="ru_RU">Для сообщений об ошибках, для пожеланий, для общих вопросов, посетите тему дополнения в форуме Kodi.</disclaimer>
 		<disclaimer lang="sr_RS">За проблеме, захтеве или општа питања посетите Digital clock screensaver тему на Kodi форуму.</disclaimer>
 		<disclaimer lang="sr_RS@latin">Za probleme, zahteve ili opšta pitanja posetite Digital clock screensaver temu na Kodi forumu.</disclaimer>
 		<disclaimer lang="tr_TR">Hata bildirme, istek ve genel sorularınız için Kodi forumunda dijital saat ekran koruyucu başlığını ziyaret edebilirsiniz.</disclaimer>
