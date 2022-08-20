@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-07-28 17:14+0000\n"
+"PO-Revision-Date: 2022-08-20 09:14+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-look-and-feel/screensaver-digitalclock/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -51,7 +51,7 @@ msgstr ""
 # empty strings from id 32011 to 32019
 msgctxt "#32020"
 msgid "Background"
-msgstr ""
+msgstr "Tausta"
 
 # empty strings from id 32021 to 32024
 msgctxt "#32025"
