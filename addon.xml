@@ -27,8 +27,9 @@
 			<screenshot>resources/screenshot-3.png</screenshot>
 		</assets>
 		<summary lang="da_DK">Pauseskærm med digitalt ur</summary>
-		<summary lang="de_DE">Digitaluhr-Bildschirmschoner</summary>
+		<summary lang="de_DE">Bildschirmschoner Digitaluhr</summary>
 		<summary lang="en_GB">Digital clock screensaver</summary>
+		<summary lang="es_ES">Salvapantallas Reloj digital</summary>
 		<summary lang="it_IT">Salvaschermo orologio digitale</summary>
 		<summary lang="pl_PL">Wygaszacz ekranu jako zegar cyfrowy</summary>
 		<summary lang="ru_RU">Застава &quot;Цифровые часы&quot;</summary>
@@ -51,9 +52,10 @@
 		<description lang="tr_TR">Dijital saat ekran koruyucu, tarih ve saatin yanı sıra şimdi oynatılıyor bilgisi, hava durumu bilgisi, resim slayt gösterisi gibi çeşitli seçenekler sunar.</description>
 		<description lang="zh_CN">数字时钟屏幕保护程序，带有日期、当前播放信息、天气信息、图片幻灯片和多个选项。</description>
 		<disclaimer lang="da_DK">Ved fejl, anmodninger eller generelle spørgsmål, besøg tråden Pauseskærm med digital ur på Kodi-forummet.</disclaimer>
+		<disclaimer lang="de_DE">Für Fehler, Wünsche oder allgemeine Fragen den Thread „Digital clock screensaver“ im Kodi-Forum besuchen.</disclaimer>
 		<disclaimer lang="en_GB">For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum.</disclaimer>
 		<disclaimer lang="en_NZ">For bugs, requests or general questions visit the Digital clock screensaver thread on the Kodi forum.</disclaimer>
-		<disclaimer lang="es_ES">Para errores, peticiones o cuestiones generales visite el hilo Salvapantallas reloj digital en el foro de Kodi</disclaimer>
+		<disclaimer lang="es_ES">Para errores, peticiones o cuestiones generales visite el hilo Salvapantallas reloj digital en el foro de Kodi.</disclaimer>
 		<disclaimer lang="fr_CA">Concernant les bogues ou pour des questions générales, visitez le fil « Digital clock screensaver » du forum de Kodi.</disclaimer>
 		<disclaimer lang="fr_FR">Pour les bogues, demandes ou questions générales, merci de visiter le fil de discussion de l&apos;économiseur d&apos;écran horloge numérique, Digital clock screensaver, sur le forum Kodi.</disclaimer>
 		<disclaimer lang="it_IT">Per bug, richieste o domande generali visita il thread del salvaschermo orologio digitale sul forum Kodi.</disclaimer>
