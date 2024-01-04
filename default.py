@@ -335,8 +335,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.icon_control.setImage(os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png")
 
 		#setting up the time format
-        self.timeformat = ['%H','%I','%I','%#I','%#I','%-I','%-I']
-        if self.timef == '2' or self.timef == '4' or self.timef == '6':
+        self.timeformat = ['%H','%I','%I','%#H','%#I','%#I','%-H','%-I','%-I']
+        if self.timef == '2' or self.timef == '5' or self.timef == '8':
            self.ampm_control.setVisible(True)
         self.time = self.timeformat[int(self.timef)]
 
@@ -506,7 +506,10 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.shadowcolor = self.rtr + self.shadowcolor[2:]
 
     def Display(self):
-        self.hour_control.setLabel(datetime.now().strftime(self.time))
+        if int(self.timef) == 4 or int(self.timef) == 5 or int(self.timef) == 7 or int(self.timef) == 8 or ((int(self.timef) == 3 or int(self.timef) == 6) and int(datetime.now().strftime(self.time))<10):
+            self.hour_control.setLabel('  ' + datetime.now().strftime(self.time))
+        else:
+            self.hour_control.setLabel(datetime.now().strftime(self.time))
         self.colon_control.setLabel(" : ")
         self.minute_control.setLabel(datetime.now().strftime("%M"))
         self.ampm_control.setLabel(datetime.now().strftime("%p"))
