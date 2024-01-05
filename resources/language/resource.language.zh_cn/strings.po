@@ -663,3 +663,15 @@ msgstr "启用 RSS"
 msgctxt "#32621"
 msgid "RSS needs to be properly configured in Kodi and enabled!"
 msgstr "RSS 需要在 Kodi 中正确配置并启用！"
+
+msgctxt "#32630"
+msgid "Turn off screen via CEC"
+msgstr ""
+
+msgctxt "#32631"
+msgid "Stop now playing media"
+msgstr ""
+
+msgctxt "#32632"
+msgid "Turn off screen via CEC after (minutes)"
+msgstr ""
