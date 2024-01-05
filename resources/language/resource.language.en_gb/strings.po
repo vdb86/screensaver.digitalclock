@@ -701,3 +701,15 @@ msgstr ""
 msgctxt "#32621"
 msgid "RSS needs to be properly configured in Kodi and enabled!"
 msgstr ""
+
+msgctxt "#32630"
+msgid "Turn off screen via CEC"
+msgstr ""
+
+msgctxt "#32631"
+msgid "Stop now playing media"
+msgstr ""
+
+msgctxt "#32632"
+msgid "Turn off screen via CEC after (minutes)"
+msgstr ""

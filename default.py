@@ -74,6 +74,8 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.logoutcounter = 0
         self.switch = 0
         self.iconswitch = 0
+        self.turnedoff = 0
+        self.ceccounter = 0
         self.movementtype = int(Addon.getSetting('movementtype'))
         self.movementspeed = int(Addon.getSetting('movementspeed'))
         self.stayinplace = int(Addon.getSetting('stayinplace'))
@@ -134,6 +136,9 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.logout = Addon.getSetting('logout')
         self.logoutplaying = Addon.getSetting('logoutplaying')
         self.logouttime = int(Addon.getSetting('logouttime'))
+        self.cecoff = Addon.getSetting('cecoff')
+        self.cecoffplaying = Addon.getSetting('cecoffplaying')
+        self.cecofftime = int(Addon.getSetting('cecofftime'))
         self.rss = Addon.getSetting('rss')
         self.monitor = xbmc.Monitor()
 
@@ -461,7 +466,25 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                         xbmc.executebuiltin("System.LogOff")
                         xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)
                         self.logoutcounter = 0
-          
+
+			#Turn off screen via CEC
+            if self.cecoff == 'true' and self.turnedoff == 0:
+                self.ceccounter +=1
+                if self.ceccounter >= (self.multiplier*self.cecofftime*60):
+                    if xbmc.getCondVisibility('Player.HasMedia') == 1:
+                        if self.cecoffplaying == 'true':
+                            xbmc.executebuiltin("PlayerControl(Stop)")
+                            xbmc.log('Digital Clock Screensaver %s: Stopping media' %Addonversion)
+                            xbmc.executebuiltin("CECStandby")
+                            xbmc.log('Digital Clock Screensaver %s: Turning screen off via CEC' %Addonversion)
+                            self.ceccounter = 0
+                            self.turnedoff = 1
+                    else:
+                        xbmc.executebuiltin("CECStandby")
+                        xbmc.log('Digital Clock Screensaver %s: Turning screen off via CEC' %Addonversion)
+                        self.ceccounter = 0
+                        self.turnedoff = 1
+
             self.monitor.waitForAbort(self.waittimer)
 
     def setCTR(self):
