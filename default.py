@@ -455,35 +455,24 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.logout == 'true' and xbmc.getCondVisibility('Window.Previous(loginscreen)') == 0:
                 self.logoutcounter +=1
                 if self.logoutcounter >= (self.multiplier*self.logouttime*60):
-                    if xbmc.getCondVisibility('Player.HasMedia') == 1:
-                        if self.logoutplaying == 'true':
-                            xbmc.executebuiltin("PlayerControl(Stop)")
-                            xbmc.log('Digital Clock Screensaver %s: Stopping media' %Addonversion)
-                            xbmc.executebuiltin("System.LogOff")
-                            xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)
-                            self.logoutcounter = 0
-                    else:
-                        xbmc.executebuiltin("System.LogOff")
-                        xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)
-                        self.logoutcounter = 0
+                    if self.logoutplaying == 'true' and xbmc.getCondVisibility('Player.HasMedia') == 1:
+                        xbmc.executebuiltin("PlayerControl(Stop)")
+                        xbmc.log('Digital Clock Screensaver %s: Stopping media' %Addonversion)
+                    xbmc.executebuiltin("System.LogOff")
+                    xbmc.log('Digital Clock Screensaver %s: Logging out' %Addonversion)
+                    self.logoutcounter = 0
 
 			#Turn off screen via CEC
             if self.cecoff == 'true' and self.turnedoff == 0:
                 self.ceccounter +=1
                 if self.ceccounter >= (self.multiplier*self.cecofftime*60):
-                    if xbmc.getCondVisibility('Player.HasMedia') == 1:
-                        if self.cecoffplaying == 'true':
-                            xbmc.executebuiltin("PlayerControl(Stop)")
-                            xbmc.log('Digital Clock Screensaver %s: Stopping media' %Addonversion)
-                            xbmc.executebuiltin("CECStandby")
-                            xbmc.log('Digital Clock Screensaver %s: Turning screen off via CEC' %Addonversion)
-                            self.ceccounter = 0
-                            self.turnedoff = 1
-                    else:
-                        xbmc.executebuiltin("CECStandby")
-                        xbmc.log('Digital Clock Screensaver %s: Turning screen off via CEC' %Addonversion)
-                        self.ceccounter = 0
-                        self.turnedoff = 1
+                    if self.cecoffplaying == 'true' and xbmc.getCondVisibility('Player.HasMedia') == 1:
+                        xbmc.executebuiltin("PlayerControl(Stop)")
+                        xbmc.log('Digital Clock Screensaver %s: Stopping media' %Addonversion)
+                    xbmc.executebuiltin("CECStandby")
+                    xbmc.log('Digital Clock Screensaver %s: Turning screen off via CEC' %Addonversion)
+                    self.ceccounter = 0
+                    self.turnedoff = 1
 
             self.monitor.waitForAbort(self.waittimer)
 
