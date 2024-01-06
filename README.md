@@ -87,15 +87,10 @@ __Extra Options__
 - Enable RSS (The screensaver will show the same RSS Kodi shows, so make sure it's properly configured and enabled in Kodi)
 
 This screensaver is configured for every skin separately since it has to use Fonts defined by the skin!
-
-Skin developers have an option to use script-screensaver-digitalclock-custom.xml in their skins 1080i, 720p... folder.
-They should provide and maintain that xml file with their skin!
-Screensaver will check for skin folders in this order: 1080i, 720p, 21x9, 16x9, 4x3Hirez.
-If no script-screensaver-digitalclock-custom.xml is found screensaver will look for an appropriate xml file within screensavers folder.
 If there is no appropriate xml file it will use skin.default.xml
 
-If the skin is not on the list screensaver will use default font names from confluence (It might not look pretty but it will work with any skin):
-
+If the skin is not on the list below screensaver will use default font names from confluence (It might not look pretty but it will work with any skin).
+List of supported skins (If the skin is in the official repository it will be supported):
 - Ace2
 - Adonic
 - Aeon Nox 5
@@ -104,20 +99,27 @@ If the skin is not on the list screensaver will use default font names from conf
 - Aeon MQ5
 - Aeon MQ5
 - Aeon MQ6
+- Aeon MQ6 (Matrix mod)
+- Aeon MQ7 (Matrix mod)
 - Aeon MQ8 (And some mods)
 - Aeon MQ9
 - Amber
 - AppTV
 - Arctic: Zephyr
 - Arctic: Zephyr 2
+- Arctic: Zephyr - Reloaded
 - Aura
 - Bello 6
 - Bello 7
+- Bello 8
 - Black Glass Nova
 - Box
+- CarPc-Carbon
 - Chroma
 - Confluence
+- EllipsisUI
 - Embuary-Leia
+- Embuary-Matrix
 - Eminence.2
 - Estouchy
 - Estuary
@@ -128,6 +130,7 @@ If the skin is not on the list screensaver will use default font names from conf
 - Madnox
 - Metropolis
 - Mimic
+- Mimic-LR
 - Nebula
 - Omni
 - OSMC
@@ -138,6 +141,7 @@ If the skin is not on the list screensaver will use default font names from conf
 - Retouched
 - Reestuarized
 - Revolve
+- TetradUI
 - Titan
 - Transparency
 - Unity
