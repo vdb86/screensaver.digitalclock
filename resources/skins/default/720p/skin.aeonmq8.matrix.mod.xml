@@ -73,7 +73,7 @@
 			</control>						
 			<control type="label" id="30101">
 				<description>Hour</description>
-				<posx>60</posx>
+				<posx>50</posx>
 				<posy>10</posy>
 				<width>120</width>
 				<height>65</height>
@@ -101,7 +101,7 @@
 				</control>
 			<control type="label" id="30103">
 				<description>Minute</description>
-				<posx>180</posx>
+				<posx>190</posx>
 				<posy>10</posy>
 				<width>120</width>
 				<height>65</height>
@@ -115,7 +115,7 @@
 			</control>
 			<control type="label" id="30104">
 				<description>AMPM</description>
-				<posx>280</posx>
+				<posx>285</posx>
 				<posy>45</posy>
 				<width>70</width>
 				<height>35</height>
