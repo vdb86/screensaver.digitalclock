@@ -91,61 +91,29 @@ If there is no appropriate xml file it will use skin.default.xml
 
 If the skin is not on the list below screensaver will use default font names from confluence (It might not look pretty but it will work with any skin).
 List of supported skins (If the skin is in the official repository it will be supported):
-- Ace2
-- Adonic
-- Aeon Nox 5
 - Aeon Nox Silvo
-- Aeon Tajo
-- Aeon MQ5
-- Aeon MQ5
-- Aeon MQ6
-- Aeon MQ6 (Matrix mod)
 - Aeon MQ7 (Matrix mod)
-- Aeon MQ8 (And some mods)
+- Aeon MQ8 (Matrix mod, Nexus mod)
 - Aeon MQ9
 - Amber
 - AppTV
-- Arctic: Zephyr
-- Arctic: Zephyr 2
 - Arctic: Zephyr - Reloaded
-- Aura
-- Bello 6
-- Bello 7
 - Bello 8
-- Black Glass Nova
-- Box
-- CarPc-Carbon
-- Chroma
 - Confluence
 - EllipsisUI
-- Embuary-Leia
 - Embuary-Matrix
 - Eminence.2
 - Estouchy
 - Estuary
 - Ftv
-- (Fuse)neue
-- Grid
-- Horizon
-- Madnox
 - Metropolis
-- Mimic
-- Mimic-LR
-- Nebula
-- Omni
+- Mimic-LR
 - OSMC
 - Pellucid
-- Phenomenal
 - Quartz
 - Rapier
-- Retouched
-- Reestuarized
-- Revolve
 - TetradUI
-- Titan
-- Transparency
 - Unity
-- Xperience1080
 
 If your skin is not on the list, and you would like it to be - send me a message.
 
