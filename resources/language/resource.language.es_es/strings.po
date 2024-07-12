@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-01-12 00:13+0000\n"
-"Last-Translator: José Antonio Alvarado <jalvarado0.eses@gmail.com>\n"
+"PO-Revision-Date: 2024-05-31 15:16+0000\n"
+"Last-Translator: roliverosc <roliverosc@hotmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-look-and-feel/screensaver-digitalclock/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.5.4\n"
 
 msgctxt "Addon Summary"
 msgid "Digital clock screensaver"
@@ -82,7 +82,7 @@ msgstr "Velocidad de movimiento"
 
 msgctxt "#32111"
 msgid "Slow"
-msgstr "Despacio"
+msgstr "Lento"
 
 msgctxt "#32112"
 msgid "Normal"
@@ -220,8 +220,12 @@ msgid "Merge song artist and title"
 msgstr "Combinar artista y título de canción"
 
 msgctxt "#32230"
-msgid "Enable weather temperature information"
+msgid "Enable weather information"
 msgstr "Activar información meteorológica"
+
+msgctxt "#32235"
+msgid "Enable weather conditions information"
+msgstr ""
 
 msgctxt "#32240"
 msgid "Weather icons"
@@ -229,7 +233,7 @@ msgstr "Iconos meteorológicos"
 
 msgctxt "#32241"
 msgid "Hide weather icon"
-msgstr "Ocultar el icono del tiempo"
+msgstr "Ocultar el icono de meteorología"
 
 msgctxt "#32242"
 msgid "Icon set 1"
@@ -249,56 +253,56 @@ msgstr "Conjunto de iconos 4"
 
 msgctxt "#32250"
 msgid "Enable album art"
-msgstr "Habilitar carátula de álbum"
+msgstr "Activar carátula de álbum"
 
 # empty strings from id 32251 to 32259
 msgctxt "#32260"
 msgid "Enable CPU usage information"
-msgstr "Habilitar información del uso de la CPU"
+msgstr "Activar información de uso de la CPU"
 
 msgctxt "#32261"
 msgid "Enable battery level information"
-msgstr "Habilitar información del nivel de batería"
+msgstr "Activar información de nivel de batería"
 
 msgctxt "#32262"
 msgid "Enable free memory information"
-msgstr "Habilitar información de memoria libre"
+msgstr "Activar información de memoria libre"
 
 msgctxt "#32263"
 msgid "Enable movie library information"
-msgstr "Habilitar información de la biblioteca de películas"
+msgstr "Activar información de la biblioteca de películas"
 
 msgctxt "#32264"
 msgid "Enable TV show library information"
-msgstr "Habilitar información de la biblioteca de programas de TV"
+msgstr "Activar información de la biblioteca de series de TV"
 
 msgctxt "#32265"
 msgid "Enable music library information"
-msgstr "Habilitar información de la biblioteca de música"
+msgstr "Activar información de la biblioteca de música"
 
 msgctxt "#32266"
 msgid "Enable CPU temperature"
-msgstr "Habilitar temperatura de la CPU"
+msgstr "Activar temperatura de la CPU"
 
 msgctxt "#32267"
 msgid "Enable GPU temperature"
-msgstr "Habilitar temperatura de la GPU"
+msgstr "Activar temperatura de la GPU"
 
 msgctxt "#32268"
 msgid "Enable HDD temperature"
-msgstr "Habilitar temperatura del disco duro"
+msgstr "Activar temperatura del disco duro"
 
 msgctxt "#32269"
 msgid "Enable FPS"
-msgstr "Habilitar FPS"
+msgstr "Activar FPS"
 
 msgctxt "#32270"
 msgid "Enable current uptime"
-msgstr "Habilitar tiempo de actividad actual"
+msgstr "Activar tiempo de actividad actual"
 
 msgctxt "#32271"
 msgid "Enable total uptime"
-msgstr "Habilitar tiempo de actividad total"
+msgstr "Activar tiempo de actividad total"
 
 # empty strings from id 32272 to 32279
 msgctxt "#32280"
@@ -323,11 +327,11 @@ msgstr "Películas vistas:"
 
 msgctxt "#32285"
 msgid "Unwatched movies:"
-msgstr "Películas sin ver:"
+msgstr "Películas no vistas:"
 
 msgctxt "#32286"
 msgid "Total TV shows:"
-msgstr "Total programas de TV:"
+msgstr "Total series de TV:"
 
 msgctxt "#32287"
 msgid "Total episodes:"
@@ -335,7 +339,7 @@ msgstr "Total episodios:"
 
 msgctxt "#32288"
 msgid "Watched TV shows:"
-msgstr "Programas de TV vistos:"
+msgstr "Series vistas:"
 
 msgctxt "#32289"
 msgid "Watched episodes:"
@@ -343,11 +347,11 @@ msgstr "Episodios vistos:"
 
 msgctxt "#32290"
 msgid "Unwatched TV shows:"
-msgstr "Programas de TV sin ver:"
+msgstr "Series no vistas:"
 
 msgctxt "#32291"
 msgid "Unwatched episodes:"
-msgstr "Episodios sin ver:"
+msgstr "Episodios no vistos:"
 
 msgctxt "#32292"
 msgid "Artists:"
@@ -392,11 +396,11 @@ msgstr "Elegir el color de la hora y la opacidad  - [COLOR $INFO[Skin.String(scr
 
 msgctxt "#32311"
 msgid "Random hour color"
-msgstr "Color de la hora aleatorio"
+msgstr "Color aleatorio de hora"
 
 msgctxt "#32312"
 msgid "Random hour opacity"
-msgstr "Opacidad de la hora aleatoria"
+msgstr "Opacidad aleatoria de hora"
 
 # empty strings from id 32313 to 32319
 msgctxt "#32320"
@@ -484,7 +488,7 @@ msgstr "Elegir el color de la sombra del texto y la opacidad - [COLOR $INFO[Skin
 # empty strings from id 32501 to 32504
 msgctxt "#32505"
 msgid "Choose background image aspect ratio:"
-msgstr "Elegir la relación de aspecto de la imagen de fondo:"
+msgstr "Elegir relación de aspecto de la imagen de fondo:"
 
 msgctxt "#32506"
 msgid "Fill the screen"
@@ -512,7 +516,7 @@ msgstr "Presentación de imágenes"
 
 msgctxt "#32514"
 msgid "Skin Helper Backgrounds"
-msgstr "Fondos para el tema del servicio de ayuda"
+msgstr "Fondos Skin Helper"
 
 msgctxt "#32515"
 msgid "Dim"
@@ -537,7 +541,7 @@ msgstr "¡Atención! ¡Tener una imagen fija en la pantalla puede quemarla!"
 
 msgctxt "#32540"
 msgid "Choose slideshow directory"
-msgstr "Elegir el directorio de la presentación de imágenes"
+msgstr "Elegir directorio de la presentación de imágenes"
 
 msgctxt "#32550"
 msgid "Random images"
@@ -602,7 +606,7 @@ msgstr "¡Requiere skin.helper.backgrounds!"
 
 msgctxt "#32580"
 msgid "Choose Skin Helper background"
-msgstr "Eligir el fondo del tema del servicio de ayuda"
+msgstr "Elegir fondo de Skin Helper"
 
 msgctxt "#32581"
 msgid "Movie random fanart"
@@ -610,7 +614,7 @@ msgstr "Fanart aleatorio de películas"
 
 msgctxt "#32582"
 msgid "TV show random fanart"
-msgstr "Fanart aleatorio de programas de TV"
+msgstr "Fanart aleatorio de series de TV"
 
 msgctxt "#32583"
 msgid "Music artist random fanart"
@@ -631,7 +635,7 @@ msgstr "Cerrar sesión"
 
 msgctxt "#32611"
 msgid "Stop now playing media"
-msgstr "Detener ahora la reproducción multimedia"
+msgstr "Detener ahora la reproducción"
 
 msgctxt "#32612"
 msgid "Log out after (minutes)"
@@ -639,7 +643,7 @@ msgstr "Cerrar sesión después de (minutos)"
 
 msgctxt "#32620"
 msgid "Enable RSS"
-msgstr "Habilitar RSS"
+msgstr "Activar RSS"
 
 msgctxt "#32621"
 msgid "RSS needs to be properly configured in Kodi and enabled!"
@@ -647,15 +651,15 @@ msgstr "¡RSS debe estar correctamente configurado en Kodi y activado!"
 
 msgctxt "#32630"
 msgid "Turn off screen via CEC"
-msgstr "Apagar la pantalla a través de CEC"
+msgstr "Apagar pantalla a través de CEC"
 
 msgctxt "#32631"
 msgid "Stop now playing media"
-msgstr "Detener ahora la reproducción multimedia"
+msgstr "Detener ahora la reproducción"
 
 msgctxt "#32632"
 msgid "Turn off screen via CEC after (minutes)"
-msgstr "Apagar la pantalla a través de CEC después de (minutos)"
+msgstr "Apagar pantalla a través de CEC después de (minutos)"
 
 #~ msgctxt "#32010"
 #~ msgid "Colors"
