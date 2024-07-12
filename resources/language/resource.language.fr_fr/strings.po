@@ -220,7 +220,7 @@ msgid "Merge song artist and title"
 msgstr ""
 
 msgctxt "#32230"
-msgid "Enable weather information"
+msgid "Enable weather temperature information"
 msgstr "Activer les infos météo"
 
 msgctxt "#32240"

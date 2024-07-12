@@ -232,10 +232,15 @@ msgstr "Songinterpret und Titel zusammenführen"
 
 # empty strings from id 32224 to 32229
 msgctxt "#32230"
-msgid "Enable weather information"
+msgid "Enable weather temperature information"
 msgstr "Wetterinformation aktivieren"
 
-# empty strings from id 32231 to 32239
+# empty strings from id 32231 to 32234
+msgctxt "#32235"
+msgid "Enable weather conditions information"
+msgstr ""
+
+# empty strings from id 32236 to 32239
 msgctxt "#32240"
 msgid "Weather icons"
 msgstr "Wettersymbole"
