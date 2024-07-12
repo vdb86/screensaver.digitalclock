@@ -232,7 +232,7 @@ msgstr ""
 
 # empty strings from id 32224 to 32229
 msgctxt "#32230"
-msgid "Enable weather information"
+msgid "Enable weather temperature information"
 msgstr ""
 
 # empty strings from id 32231 to 32234
