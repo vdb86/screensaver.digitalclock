@@ -219,7 +219,7 @@ msgid "Merge song artist and title"
 msgstr ""
 
 msgctxt "#32230"
-msgid "Enable weather temperature information"
+msgid "Enable weather information"
 msgstr "Benarkan maklumat cuaca"
 
 msgctxt "#32240"

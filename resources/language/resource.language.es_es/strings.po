@@ -220,12 +220,8 @@ msgid "Merge song artist and title"
 msgstr "Combinar artista y título de canción"
 
 msgctxt "#32230"
-msgid "Enable weather temperature information"
+msgid "Enable weather information"
 msgstr "Activar información meteorológica"
-
-msgctxt "#32235"
-msgid "Enable weather conditions information"
-msgstr ""
 
 msgctxt "#32240"
 msgid "Weather icons"
