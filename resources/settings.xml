@@ -34,7 +34,7 @@
 		<setting id="cputemp" label="32266" type="bool" visible="eq(-13,true)" default="false"/>
 		<setting id="gputemp" label="32267" type="bool" visible="eq(-14,true)" default="false"/>
 		<setting id="hddtemp" label="32268" type="bool" visible="eq(-15,true)" default="false"/>
-		<setting id="fps" label="32269" type="bool" visible="eq(-15,true)" default="false"/>
+		<setting id="fps" label="32269" type="bool" visible="eq(-16,true)" default="false"/>
 		<setting id="cuptime" label="32270" type="bool" visible="eq(-17,true)" default="false"/>
 		<setting id="tuptime" label="32271" type="bool" visible="eq(-18,true)" default="false"/>
 		<setting id="movies" label="32263" type="bool" visible="eq(-19,true)" default="false"/>
