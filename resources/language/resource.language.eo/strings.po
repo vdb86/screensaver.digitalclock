@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-09-21 23:38+0000\n"
+"PO-Revision-Date: 2024-09-24 19:37+0000\n"
 "Last-Translator: Jakub Fabijan <animatorzpolski@gmail.com>\n"
 "Language-Team: Esperanto <https://kodi.weblate.cloud/projects/kodi-add-ons-look-and-feel/screensaver-digitalclock/eo/>\n"
 "Language: eo\n"
@@ -46,7 +46,7 @@ msgstr ""
 # empty strings from id 32006 to 32009
 msgctxt "#32010"
 msgid "Color | Opacity"
-msgstr ""
+msgstr "Koloro | Opakeco"
 
 # empty strings from id 32011 to 32019
 msgctxt "#32020"
@@ -86,15 +86,15 @@ msgstr ""
 
 msgctxt "#32111"
 msgid "Slow"
-msgstr ""
+msgstr "Malrapida"
 
 msgctxt "#32112"
 msgid "Normal"
-msgstr "Normal"
+msgstr "Normala"
 
 msgctxt "#32113"
 msgid "Fast"
-msgstr ""
+msgstr "Rapida"
 
 # empty strings from id 32114 to 32119
 msgctxt "#32120"
@@ -108,19 +108,19 @@ msgstr ""
 # empty strings from id 32122 to 32129
 msgctxt "#32130"
 msgid "Time format"
-msgstr ""
+msgstr "Tempoformo"
 
 msgctxt "#32131"
 msgid "17:14"
-msgstr ""
+msgstr "17:14"
 
 msgctxt "#32132"
 msgid "05:14"
-msgstr ""
+msgstr "05:14"
 
 msgctxt "#32133"
 msgid "05:14 PM"
-msgstr ""
+msgstr "05:14 PM"
 
 msgctxt "#32134"
 msgid "5:14 No hour zero padding Windows"
@@ -145,11 +145,11 @@ msgstr ""
 
 msgctxt "#32140"
 msgid "Date format"
-msgstr ""
+msgstr "Datoformo"
 
 msgctxt "#32141"
 msgid "Hide date"
-msgstr ""
+msgstr "Kaŝi daton"
 
 msgctxt "#32142"
 msgid "Saturday 30. May 2015"
@@ -157,11 +157,11 @@ msgstr ""
 
 msgctxt "#32143"
 msgid "30.05.2015"
-msgstr ""
+msgstr "30.05.2015"
 
 msgctxt "#32144"
 msgid "05.30.2015"
-msgstr ""
+msgstr "05.30.2015"
 
 msgctxt "#32145"
 msgid "Custom"
@@ -192,7 +192,7 @@ msgstr ""
 
 msgctxt "#32173"
 msgid "Year: yy(2-digit year) yyyy(4-digit year)"
-msgstr ""
+msgstr "Jaro: yy(2-cifera jaro) yyyy(4-cifera jaro)"
 
 # empty strings from id 32174 to 32179
 msgctxt "#32180"
@@ -246,19 +246,19 @@ msgstr ""
 
 msgctxt "#32242"
 msgid "Icon set 1"
-msgstr ""
+msgstr "Piktogramaro 1"
 
 msgctxt "#32243"
 msgid "Icon set 2"
-msgstr ""
+msgstr "Piktogramaro 2"
 
 msgctxt "#32244"
 msgid "Icon set 3"
-msgstr ""
+msgstr "Piktogramaro 3"
 
 msgctxt "#32245"
 msgid "Icon set 4"
-msgstr ""
+msgstr "Piktogramaro 4"
 
 # empty strings from id 32246 to 32249
 msgctxt "#32250"
@@ -321,71 +321,71 @@ msgstr ""
 
 msgctxt "#32281"
 msgid "Battery:"
-msgstr ""
+msgstr "Baterio:"
 
 msgctxt "#32282"
 msgid "Free memory:"
-msgstr ""
+msgstr "Libera memoro:"
 
 msgctxt "#32283"
 msgid "Total movies:"
-msgstr ""
+msgstr "Sume filmoj:"
 
 msgctxt "#32284"
 msgid "Watched movies:"
-msgstr ""
+msgstr "Spektitaj filmoj:"
 
 msgctxt "#32285"
 msgid "Unwatched movies:"
-msgstr ""
+msgstr "Nespektitaj filmoj:"
 
 msgctxt "#32286"
 msgid "Total TV shows:"
-msgstr ""
+msgstr "Sume televidserioj:"
 
 msgctxt "#32287"
 msgid "Total episodes:"
-msgstr ""
+msgstr "Sume epizodoj:"
 
 msgctxt "#32288"
 msgid "Watched TV shows:"
-msgstr ""
+msgstr "Spektitaj televidserioj:"
 
 msgctxt "#32289"
 msgid "Watched episodes:"
-msgstr ""
+msgstr "Spektitaj epizodoj:"
 
 msgctxt "#32290"
 msgid "Unwatched TV shows:"
-msgstr ""
+msgstr "Nespektitaj televidserioj:"
 
 msgctxt "#32291"
 msgid "Unwatched episodes:"
-msgstr ""
+msgstr "Nespektitaj epizodoj:"
 
 msgctxt "#32292"
 msgid "Artists:"
-msgstr ""
+msgstr "Artistoj:"
 
 msgctxt "#32293"
 msgid "Albums:"
-msgstr ""
+msgstr "Albumoj:"
 
 msgctxt "#32294"
 msgid "Songs:"
-msgstr ""
+msgstr "Kantoj:"
 
 msgctxt "#32295"
 msgid "CPU temperature:"
-msgstr ""
+msgstr "Temperaturo de CPU:"
 
 msgctxt "#32296"
 msgid "GPU temperature:"
-msgstr ""
+msgstr "Temperaturo de GPU:"
 
 msgctxt "#32297"
 msgid "HDD temperature:"
-msgstr ""
+msgstr "Temperaturo de HDD:"
 
 msgctxt "#32298"
 msgid "FPS:"
@@ -402,67 +402,67 @@ msgstr ""
 # empty strings from id 32301 to 32309
 msgctxt "#32310"
 msgid "Choose hour color and opacity  - [COLOR $INFO[Skin.String(screensaver.digitalclock.hourcolor)]]($INFO[Skin.String(screensaver.digitalclock.hourcolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de horo  - [COLOR $INFO[Skin.String(screensaver.digitalclock.hourcolor)]]($INFO[Skin.String(screensaver.digitalclock.hourcolor.name)])[/COLOR]"
 
 msgctxt "#32311"
 msgid "Random hour color"
-msgstr ""
+msgstr "Hazarda koloro de horo"
 
 msgctxt "#32312"
 msgid "Random hour opacity"
-msgstr ""
+msgstr "Hazarda opakeco de horo"
 
 # empty strings from id 32313 to 32319
 msgctxt "#32320"
 msgid "Choose colon color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.coloncolor)]]($INFO[Skin.String(screensaver.digitalclock.coloncolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de dupunkto - [COLOR $INFO[Skin.String(screensaver.digitalclock.coloncolor)]]($INFO[Skin.String(screensaver.digitalclock.coloncolor.name)])[/COLOR]"
 
 msgctxt "#32321"
 msgid "Random colon color"
-msgstr ""
+msgstr "Hazarda koloro de dupunkto"
 
 msgctxt "#32322"
 msgid "Random colon opacity"
-msgstr ""
+msgstr "Hazarda opakeco de dupunkto"
 
 # empty strings from id 32323 to 32329
 msgctxt "#32330"
 msgid "Choose minute color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.minutecolor)]]($INFO[Skin.String(screensaver.digitalclock.minutecolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de minuto - [COLOR $INFO[Skin.String(screensaver.digitalclock.minutecolor)]]($INFO[Skin.String(screensaver.digitalclock.minutecolor.name)])[/COLOR]"
 
 msgctxt "#32331"
 msgid "Random minute color"
-msgstr ""
+msgstr "Hazarda koloro de minuto"
 
 msgctxt "#32332"
 msgid "Random minute opacity"
-msgstr ""
+msgstr "Hazarda opakeco de minuto"
 
 # empty strings from id 32333 to 32339
 msgctxt "#32340"
 msgid "Choose AM/PM color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.ampmcolor)]]($INFO[Skin.String(screensaver.digitalclock.ampmcolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de AM/PM - [COLOR $INFO[Skin.String(screensaver.digitalclock.ampmcolor)]]($INFO[Skin.String(screensaver.digitalclock.ampmcolor.name)])[/COLOR]"
 
 msgctxt "#32341"
 msgid "Random AM/PM color"
-msgstr ""
+msgstr "Hazarda koloro de AM/PM"
 
 msgctxt "#32342"
 msgid "Random AM/PM opacity"
-msgstr ""
+msgstr "Hazarda opakeco de AM/PM"
 
 # empty strings from id 32343 to 32349
 msgctxt "#32350"
 msgid "Choose date color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.datecolor)]]($INFO[Skin.String(screensaver.digitalclock.datecolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de dato - [COLOR $INFO[Skin.String(screensaver.digitalclock.datecolor)]]($INFO[Skin.String(screensaver.digitalclock.datecolor.name)])[/COLOR]"
 
 msgctxt "#32351"
 msgid "Random date color"
-msgstr ""
+msgstr "Hazrda koloro de dato"
 
 msgctxt "#32352"
 msgid "Random date opacity"
-msgstr ""
+msgstr "Hazarda opakeco de dato"
 
 # empty strings from id 32353 to 32359
 msgctxt "#32360"
@@ -480,20 +480,20 @@ msgstr ""
 # empty strings from id 32363 to 32369
 msgctxt "#32370"
 msgid "Choose icon color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.iconcolor)]]($INFO[Skin.String(screensaver.digitalclock.iconcolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de piktogramo - [COLOR $INFO[Skin.String(screensaver.digitalclock.iconcolor)]]($INFO[Skin.String(screensaver.digitalclock.iconcolor.name)])[/COLOR]"
 
 msgctxt "#32371"
 msgid "Random icon color"
-msgstr ""
+msgstr "Hazrda koloro de piktogramo"
 
 msgctxt "#32372"
 msgid "Random icon opacity"
-msgstr ""
+msgstr "Hazrda opakeco de piktogramo"
 
 # empty strings from id 32373 to 32499
 msgctxt "#32500"
 msgid "Choose text shadow color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.shadowcolor)]]($INFO[Skin.String(screensaver.digitalclock.shadowcolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti koloron kaj opakecon de teksta ombro - [COLOR $INFO[Skin.String(screensaver.digitalclock.shadowcolor)]]($INFO[Skin.String(screensaver.digitalclock.shadowcolor.name)])[/COLOR]"
 
 # empty strings from id 32501 to 32504
 msgctxt "#32505"
@@ -515,15 +515,15 @@ msgstr ""
 
 msgctxt "#32511"
 msgid "One color"
-msgstr ""
+msgstr "Unu koloro"
 
 msgctxt "#32512"
 msgid "Single image"
-msgstr ""
+msgstr "Unu bildo"
 
 msgctxt "#32513"
 msgid "Slideshow"
-msgstr ""
+msgstr "Bildoserio"
 
 msgctxt "#32514"
 msgid "Skin Helper Backgrounds"
@@ -540,7 +540,7 @@ msgstr ""
 # empty strings from id 32517 to 32519
 msgctxt "#32520"
 msgid "Choose background color - [COLOR $INFO[Skin.String(screensaver.digitalclock.backgroundcolor)]]($INFO[Skin.String(screensaver.digitalclock.backgroundcolor.name)])[/COLOR]"
-msgstr ""
+msgstr "Elekti fonan koloron - [COLOR $INFO[Skin.String(screensaver.digitalclock.backgroundcolor)]]($INFO[Skin.String(screensaver.digitalclock.backgroundcolor.name)])[/COLOR]"
 
 # empty strings from id 32521 to 32529
 msgctxt "#32530"
@@ -559,60 +559,60 @@ msgstr ""
 # empty strings from id 32541 to 32549
 msgctxt "#32550"
 msgid "Random images"
-msgstr ""
+msgstr "Hazardaj bildoj"
 
 # empty strings from id 32551 to 32559
 msgctxt "#32560"
 msgid "Change background picture every:"
-msgstr ""
+msgstr "Ŝanĝi fonan bildon post:"
 
 msgctxt "#32561"
 msgid "15 sec"
-msgstr ""
+msgstr "15 sek."
 
 msgctxt "#32562"
 msgid "30 sec"
-msgstr ""
+msgstr "30 sek."
 
 msgctxt "#32563"
 msgid "1 min"
-msgstr ""
+msgstr "1 min."
 
 msgctxt "#32564"
 msgid "2 min"
-msgstr ""
+msgstr "2 min."
 
 msgctxt "#32565"
 msgid "3 min"
-msgstr ""
+msgstr "3 min."
 
 msgctxt "#32566"
 msgid "4 min"
-msgstr ""
+msgstr "4 min."
 
 msgctxt "#32567"
 msgid "5 min"
-msgstr ""
+msgstr "5 min."
 
 msgctxt "#32568"
 msgid "6 min"
-msgstr ""
+msgstr "6 min."
 
 msgctxt "#32569"
 msgid "7 min"
-msgstr ""
+msgstr "7 min."
 
 msgctxt "#32570"
 msgid "8 min"
-msgstr ""
+msgstr "8 min."
 
 msgctxt "#32571"
 msgid "9 min"
-msgstr ""
+msgstr "9 min."
 
 msgctxt "#32572"
 msgid "10 min"
-msgstr ""
+msgstr "10 min."
 
 # empty strings from id 32573 to 32578
 msgctxt "#32579"
@@ -646,7 +646,7 @@ msgstr ""
 
 msgctxt "#32610"
 msgid "Log out"
-msgstr ""
+msgstr "Elsaluti"
 
 msgctxt "#32611"
 msgid "Stop now playing media"
@@ -654,11 +654,11 @@ msgstr ""
 
 msgctxt "#32612"
 msgid "Log out after (minutes)"
-msgstr ""
+msgstr "Elsaluti post (minutoj)"
 
 msgctxt "#32620"
 msgid "Enable RSS"
-msgstr ""
+msgstr "Ŝalti RSS-on"
 
 msgctxt "#32621"
 msgid "RSS needs to be properly configured in Kodi and enabled!"
@@ -666,7 +666,7 @@ msgstr ""
 
 msgctxt "#32630"
 msgid "Turn off screen via CEC"
-msgstr ""
+msgstr "Elŝalti ekranon per CEC"
 
 msgctxt "#32631"
 msgid "Stop now playing media"
@@ -674,4 +674,4 @@ msgstr ""
 
 msgctxt "#32632"
 msgid "Turn off screen via CEC after (minutes)"
-msgstr ""
+msgstr "Elŝalti ekranon per CEC post (minutoj)"
