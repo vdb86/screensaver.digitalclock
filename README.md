@@ -29,7 +29,8 @@ __Additional Information__
 - Combine song artist and title  (Song artist - song title)
 - Show only music information (If this is enabled and a song is playing, only song info will be shown)
 - Enable album art
-- Enable weather information
+- Enable weather temperature information
+- Enable weather conditions information
 - Weather icons
 - Enable CPU usage information
 - Enable battery level information

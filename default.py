@@ -101,6 +101,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         self.tvshows = Addon.getSetting('tvshows')
         self.music = Addon.getSetting('music')
         self.weatherinfoshow = Addon.getSetting('weatherinfoshow')
+        self.weathercondshow = Addon.getSetting('weathercondshow')
         self.albumartshow = Addon.getSetting('albumartshow')
         self.weathericonf = Addon.getSetting('weathericonformat')
         self.infoswitch = int(Addon.getSetting('infoswitch'))
@@ -231,8 +232,16 @@ class Screensaver(xbmcgui.WindowXMLDialog):
                     self.informationlist.append('$INFO[VideoPlayer.TVShowTitle]')
                 if xbmc.getInfoLabel('VideoPlayer.Title'):
                     self.informationlist.append('$INFO[VideoPlayer.Title]')
-            if self.weatherinfoshow == 'true' and xbmc.getInfoLabel('Weather.Location'):
-                self.informationlist.append("$INFO[Weather.Temperature] - $INFO[Weather.Conditions]")
+            if self.weatherinfoshow == 'true':
+                if xbmc.getInfoLabel('Weather.Temperature'):
+                    self.informationlist.append("$INFO[Weather.Temperature]")
+                else:
+                    self.informationlist.append("Weather.Temperature: resource is not provided by your weather add-on")
+            if self.weathercondshow == 'true':
+                if xbmc.getInfoLabel('Weather.Conditions'):
+                    self.informationlist.append("$INFO[Weather.Conditions]")
+                else:
+                    self.informationlist.append("Weather.Conditions: resource is not provided by your weather add-on")
             if self.cpuusage == 'true' and xbmc.getInfoLabel('System.CpuUsage'):
                 self.corenumber = xbmc.getInfoLabel('System.CpuUsage').count('%')
                 if self.corenumber == 1:
@@ -285,14 +294,14 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             if self.informationshow == 'true':
                 if len(self.informationlist) != 0:
                     self.information_control.setPosition(0, 85)
-                    if ((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
+                    if ((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Conditions')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
                         self.icon_control.setPosition(115, 120)
                         self.container.setHeight(int(240 + 30 * (self.zoom / 100 - 1)))
                     else:
                         self.container.setHeight(int(150 + 50 * (self.zoom / 100 - 1)))
                         self.icon_control.setVisible(False)
                 else:
-                    if ((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
+                    if ((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Conditions')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
                         self.icon_control.setPosition(115, 90)
                         self.container.setHeight(int(210 + 50 * (self.zoom / 100 - 1)))
                     else:
@@ -306,11 +315,11 @@ class Screensaver(xbmcgui.WindowXMLDialog):
         else:
             if self.informationshow == 'true':
                 if len(self.informationlist) != 0:
-                    if not((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
+                    if not((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Conditions')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
                         self.container.setHeight(int(180 + 50 * (self.zoom / 100 - 1)))
                         self.icon_control.setVisible(False)
                 else:
-                    if ((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
+                    if ((self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Conditions')) or (self.nowplayinginfoshow == 'true' and self.albumartshow =='true' and xbmc.getInfoLabel('MusicPlayer.Artist'))):
                         self.icon_control.setPosition(115, 120)
                         self.container.setHeight(int(240 + 30 * (self.zoom / 100 - 1)))
                     else:
@@ -334,7 +343,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
 		#setting the icon image
         if self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and (xbmc.getInfoLabel('MusicPlayer.Artist') or xbmc.getInfoLabel('MusicPlayer.Title')):
             self.icon = xbmc.getInfoLabel('Player.art(thumb)')
-        elif self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location'):
+        elif self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Conditions'):
             self.icon = os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png"
         else:
             self.icon_control.setImage(os.path.join(path,"resources/weathericons/",self.weathericonset[int(self.weathericonf)],xbmc.getInfoLabel('Window(Weather).Property(Current.FanartCode)')) + ".png")
@@ -531,7 +540,7 @@ class Screensaver(xbmcgui.WindowXMLDialog):
             self.date_control.setLabel(self.date)
         if len(self.informationlist) != 0:
             self.information_control.setLabel(self.information)
-        if (self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Location')) or (self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and (xbmc.getInfoLabel('MusicPlayer.Artist') or xbmc.getInfoLabel('MusicPlayer.Title'))):
+        if (self.weatherinfoshow == 'true' and self.weathericonf != '0' and xbmc.getInfoLabel('Weather.Conditions')) or (self.nowplayinginfoshow == 'true' and self.albumartshow == 'true' and (xbmc.getInfoLabel('MusicPlayer.Artist') or xbmc.getInfoLabel('MusicPlayer.Title'))):
             self.icon_control.setImage(self.icon)
         self.hour_colorcontrol.setLabel(self.hourcolor)
         self.colon_colorcontrol.setLabel(self.coloncolor)
