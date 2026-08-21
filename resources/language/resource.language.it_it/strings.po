@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Addons\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-08-16 01:59+0000\n"
+"PO-Revision-Date: 2026-08-21 02:16+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-look-and-feel/screensaver-digitalclock/it_it/>\n"
 "Language: it_it\n"
@@ -453,15 +453,15 @@ msgstr "Opacità della data casuale"
 # empty strings from id 32353 to 32359
 msgctxt "#32360"
 msgid "Choose additional information color and opacity - [COLOR $INFO[Skin.String(screensaver.digitalclock.informationcolor)]]($INFO[Skin.String(screensaver.digitalclock.informationcolor.name)])[/COLOR]"
-msgstr "Scegli informazioni aggiuntive su colore e opacità - [COLOR $INFO[Skin.String(screensaver.digitalclock.informationcolor)]]($INFO[Skin.String(screensaver.digitalclock.informationcolor.name)])[/COLOR]"
+msgstr "Scegli il colore e l'opacità delle informazioni aggiuntive - [COLOR $INFO[Skin.String(screensaver.digitalclock.informationcolor)]]($INFO[Skin.String(screensaver.digitalclock.informationcolor.name)])[/COLOR]"
 
 msgctxt "#32361"
 msgid "Random additional information color"
-msgstr "Colore delle informazioni aggiuntive casuali"
+msgstr "Colore casuale delle informazioni aggiuntive"
 
 msgctxt "#32362"
 msgid "Random additional information opacity"
-msgstr "Opacità delle informazioni aggiuntive casuale"
+msgstr "Opacità casuale delle informazioni aggiuntive"
 
 # empty strings from id 32363 to 32369
 msgctxt "#32370"
@@ -618,7 +618,7 @@ msgstr "Fanart casuale artista musicale"
 
 msgctxt "#32584"
 msgid "Random fanart of all media types"
-msgstr "Fanart casuale tutti i file multimediali"
+msgstr "Fanart casuale di tutti i tipi di file multimediali"
 
 # empty strings from id 32585 to 32599
 msgctxt "#32600"
